@@ -2,6 +2,8 @@
 
 Brand: Rinkside Clock. Intended primary domain: https://rinksideclock.com.
 
-The custom domain is attached but pending verification (2026-10-24). Public A records match the host; the verification TXT record is missing and the domain returns 404. Keep canonicals, sitemap and social URLs on the working published origin until domain activation. After verification, replace that origin across dist/*.html, robots.txt and sitemap.xml with https://rinksideclock.com, verify every URL returns 200, and submit /sitemap.xml in Google Search Console. Do not claim indexing or ranking until independently measured.
+The custom domain https://rinksideclock.com is active and returned HTTP 200 on 2026-10-24. Canonicals, structured data, sitemap and social URLs use this origin. Submit /sitemap.xml in Google Search Console; indexing and ranking are not independently measured.
 
 Every controller page has its own title, description, canonical, social metadata, WebApplication structured data and static links to all profiles. Root and index.html share the root canonical. Photos retain source credits. No fabricated reviews or ranking claims.
+
+Social shares use the original 1200 × 600 PNG at /assets/rinkside-clock-social-v1.png. Every page declares explicit large-image X card metadata, Open Graph image dimensions and image alt text. The versioned filename permits future card refreshes.
