@@ -21,7 +21,7 @@ document.querySelectorAll('[data-act]').forEach(b=>b.onclick=()=>act(b.dataset.a
 document.addEventListener('keydown',e=>{if(['SELECT','INPUT','TEXTAREA','BUTTON'].includes(e.target.tagName))return;if(e.code==='Space'){e.preventDefault();game.running?stop():start()}else if(e.key.toLowerCase()==='h')horn();else if(e.key==='Enter')enter();else if(e.key==='Escape')cancel();else if(e.key==='Backspace'){e.preventDefault();digits=digits.slice(0,-1);render()}else if(/^\d$/.test(e.key))num(e.key)});
 setInterval(()=>{const now=performance.now(),dt=(now-last)/1000*Number($('speed').value);last=now;if(timeout!==null){timeout=Math.max(0,timeout-dt);if(timeout===0){timeout=null;horn();log('Time out complete')}}else if(game.running){const elapsed=Math.min(dt,game.time);game.time=Math.max(0,game.time-elapsed);if(game.enabled)for(const side of ['home','guest']){for(const p of game.pen[side])p.remaining=Math.max(0,p.remaining-elapsed);game.pen[side]=game.pen[side].filter(p=>{if(p.remaining<=0){log(side+' #'+p.player+' penalty expired');return false}return true})}if(game.time===0){game.running=false;horn();log('Period ended')}}render()},50);log('Practice console ready');render();
 
-document.querySelector('a[href="index.html"]').setAttribute("aria-current","page");
+document.querySelector('a[href="daktronics.html"]').setAttribute("aria-current","page");
 
 document.addEventListener('pointerdown',()=>{if(sound)hornAudio.unlock().catch(()=>{});},{once:true});
 document.addEventListener('keydown',()=>{if(sound)hornAudio.unlock().catch(()=>{});},{once:true});

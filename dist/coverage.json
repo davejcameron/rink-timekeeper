@@ -1,0 +1,204 @@
+{
+  "checked": "2026-10-24",
+  "scope": "Canadian rink hockey score-clock controller families and known variants; evidence inventory, not a national installed-equipment census",
+  "controllers": [
+    {
+      "name": "Daktronics All Sport 5000",
+      "url": "daktronics.html",
+      "place": "Mitchell, Ontario; Carleton University, Ottawa",
+      "evidence": "https://www.mitchellmarlins.com/page/show/6723639-volunteer-training-and-info",
+      "source": "https://www.daktronics.com/web-documents/customer-service-manuals/ed11976.pdf",
+      "limits": "Hockey overlay LL-2436; installed firmware can differ.",
+      "status": "Playable"
+    },
+    {
+      "name": "Hamilton VisionTime",
+      "url": "hamilton.html",
+      "place": "Panorama Recreation Centre, British Columbia",
+      "evidence": "https://cloud.rampinteractive.com/greatervictoriaminorballhockey/files/Information%20Documents/Clock%20Instructions/panorama_rinkB_clock_instructions_fullversion_april2018.pdf",
+      "source": "https://cloud.rampinteractive.com/greatervictoriaminorballhockey/files/Information%20Documents/Clock%20Instructions/panorama_rinkB_clock_instructions_fullversion_april2018.pdf",
+      "limits": "VisionTime telephone keypad and function-key layout.",
+      "status": "Playable"
+    },
+    {
+      "name": "Hamilton HDD 2000",
+      "url": "hamilton2000.html",
+      "place": "Cambridge, Ontario (2016 guide)",
+      "evidence": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "source": "https://erra.ncrrl.on.ca/Resources/HDD_2000series_Manual.pdf",
+      "limits": "Separate calculator-keypad workflow; not VisionTime.",
+      "status": "Playable"
+    },
+    {
+      "name": "OES ISC9000",
+      "url": "isc9000.html",
+      "place": "Port Elgin, Ontario",
+      "evidence": "https://ssmha.com/Pages/10492/How_to_Run_the_Clocks/",
+      "source": "https://cloud.rampinteractive.com/burlingtonringette/files/Arena_instructions/ISC9000-UserManual_J12_1.3.pdf",
+      "limits": "Four penalty rows; two active; training configuration documented.",
+      "status": "Playable"
+    },
+    {
+      "name": "OES ISC85X",
+      "url": "isc85x.html",
+      "place": "Bell Sensplex and Richcraft Sensplex, Ontario",
+      "evidence": "https://www.nmhop.ca/arena-clocks",
+      "source": "https://www.nmhop.ca/_files/ugd/7141f6_ee1b5e22c96840a6bf0f3b2d084118de.pdf",
+      "limits": "Preset minutes and rocker switch; optional play timer omitted.",
+      "status": "Playable"
+    },
+    {
+      "name": "Nevco MPC \u00b7 hockey code 871",
+      "url": "nevco.html",
+      "place": "Kemptville, Ontario",
+      "evidence": "https://leagues.teamlinkt.com/kemptvillehockey/TimeClockInstructions",
+      "source": "https://erra.ncrrl.on.ca/Resources/Nevco_871_Full.pdf",
+      "limits": "871 is a configuration, not a hardware generation. Check the physical overlay before selecting.",
+      "status": "Playable"
+    },
+    {
+      "name": "Nevco MPC-4 \u00b7 K2-28",
+      "url": "nevco4.html",
+      "place": "Kitsilano, British Columbia",
+      "evidence": "https://www.acadiaminorhockey.ca/uploads/acadiamha/menu_documents/14902.pdf",
+      "source": "https://www.hockeycalgary.ca/assets/file/Nevco008-3261.pdf",
+      "limits": "Hockey overlay K2-28, configuration 008-3261. No shot clocks. Alternate switch works only with no handheld attached. Ten penalties per side are a trainer limit; hardware has larger per-player memory. Clock modes here expose local time only; automatic startup programs and auxiliary clocks are omitted. Exact-score entry follows the local single-digit guide, with TIME returning to the clock.",
+      "status": "Playable"
+    },
+    {
+      "name": "Nevco MPCW-7",
+      "url": "nevco7.html",
+      "place": "Russell, Ontario",
+      "evidence": "https://www.russellwarriors.ca/the-bench/the-clock/",
+      "source": "https://nevcodocs.s3.amazonaws.com/Controls/MPC-7/Hockey.PDF",
+      "limits": "2016 hockey overlay, wired panel time control with no handheld attached. Default minor 2:00, major 5:00; penalty on/off enabled. Main MMSSs commits after five digits; period is separate. Timeout timer 1 is fixed to 30 seconds, displayed on the practice scoreboard; warning options and other timeout timers are omitted. Radio pairing, profiles, installation options, team-name programming and shot clocks are outside this profile. Goal light duration is a practice default.",
+      "status": "Playable"
+    },
+    {
+      "name": "Fair-Play MP-50 / MP-70",
+      "url": "fairplay.html",
+      "place": "Ray Friel, Ottawa, Ontario (family identified; model suffix unverified)",
+      "evidence": "https://www.nmhop.ca/_files/ugd/7141f6_117605a6be6445839cff86f0c1a812fa.pdf",
+      "source": "https://www.fair-play.com/wp-content/uploads/2023/03/98-0002-29MP-50_MP-70.pdf",
+      "limits": "MP-50/70 common hockey workflow; fixed 2/5/10-minute presets, five penalties per side, no 10-minute indicator spots, goal indicators enabled. The manufacturer photo shows the housing with a basketball overlay. Hockey key groups are a functional training arrangement; exact hockey overlay positions remain unverified. OTHER multi-segment penalties, program menus, timeout configuration, interval configuration, shifted penalty tracking and automatic penalty-time correction are omitted. Correcting the main clock preserves penalty times in this trainer.",
+      "status": "Playable \u00b7 layout pending"
+    },
+    {
+      "name": "Scoretec Ultimatic U1000",
+      "url": "scoretec.html",
+      "place": "Coquitlam, British Columbia; Calgary, Alberta",
+      "evidence": "https://coquitlamminorhockey.org/wp-content/uploads/sites/29/2025/10/scoretec-instructions.pdf",
+      "source": "https://www.hockeycalgary.ca/assets/file/Scoretec%20Score%20Clocks%20Op%27s%20Manual.pdf",
+      "limits": "U1000 control family with shots and player-number display, as described in the manufacturer manual. Five penalty slots per team, two active. Staging uses minutes or M:SS with optional /player. Long holds on CLEAR and STOP/GO PENALTIES take five seconds. Interval mode 1 and count-up limit mode 2 are implemented; full interval programming, time-of-day setup and team timeouts are omitted. Naden appears in the hosted manual title; that does not establish that every Naden console is a U1000.",
+      "status": "Playable"
+    },
+    {
+      "name": "Harris Time Sportstimer",
+      "url": "harris.html",
+      "place": "Cambridge, Ontario: Dickson, Duncan McIntosh, Hespeler and Preston (2016 guide)",
+      "evidence": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "limits": "Photographed Cambridge Sportstimer variant; unlocked at the start of practice. TIME and INT accept up to 20:00; periods 0\u20134; penalties up to five slots per side. Practice scoreboard displays two active slots and queues the rest. Slot labels stand in for player numbers because this panel enters a slot, not a jersey. Manual horn uses HORN 0 #; 2/3-minute horn must be configured each period. Exact Type 1 versus Type 2 mapping is unverified. HI indicator programming, passkey and physical unlock behavior are omitted.",
+      "status": "Playable"
+    },
+    {
+      "name": "Rotomatic A3004-PT",
+      "url": "rotomatic.html",
+      "place": "Karl Homuth Arena, Cambridge, Ontario (2016 guide)",
+      "evidence": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "limits": "Legacy A3004-PT label visible in the local guide photograph. Separate tens/units score buttons and two physical penalty timers per team, without jersey entry or an automatic queue. MAIN TIME switch plus START arms the clock. AUTO HORN is the interval toggle, separate from the automatic five-second end horn. Main RESET also sounds the horn. Mechanical key auto-repeat, electromechanical latency and contact behavior are not emulated. No manufacturer manual located; operation is sourced to the local rink guide and photographed panel instructions.",
+      "status": "Playable"
+    },
+    {
+      "name": "Harris Time Type 1 / Type 2",
+      "url": null,
+      "place": "Canadian manufacturer; Cambridge Harris installations documented, exact type mapping unresolved",
+      "evidence": "https://harristime.ca/technical-library/",
+      "source": "https://harristime.ca/technical-library/",
+      "limits": "Separate manufacturer instructions exist. The playable Sportstimer represents the photographed Cambridge variant only.",
+      "status": "Research gap"
+    },
+    {
+      "name": "OES ISC Edge",
+      "url": null,
+      "place": "Canadian manufacturer, hockey manual available; exact Canadian rink installation not yet verified",
+      "evidence": "https://www.oes-scoreboards.com/isc-edge/",
+      "source": "https://www.oes-inc.com/app/uploads/sites/2/2025/04/ISC-Edge-Manual-vA_MA-SM-001-04-17-25.pdf",
+      "limits": "Touchscreen/controller generation differs from ISC9000. Needs its own simulator and installation evidence.",
+      "status": "Research gap"
+    },
+    {
+      "name": "OES ISC-HHX",
+      "url": null,
+      "place": "Canadian manufacturer; exact rink installation not yet verified",
+      "evidence": "https://www.oes-scoreboards.com/",
+      "source": "https://www.oes-inc.com/app/uploads/sites/2/2025/09/ISC-HHX-UserManual_J2.1v1.pdf",
+      "limits": "Handheld interface; do not substitute an ISC85X or ISC9000 keypad.",
+      "status": "Research gap"
+    },
+    {
+      "name": "Fair-Play MP-60 / MP-80",
+      "url": null,
+      "place": "Hockey-capable product; exact Canadian rink installation not yet verified",
+      "evidence": "https://www.fair-play.com/product/mp-80-control/",
+      "source": "https://www.fair-play.com/product/mp-80-control/",
+      "limits": "Separate generation from MP-50/70. Product page links the manual and product imagery.",
+      "status": "Research gap"
+    },
+    {
+      "name": "Daktronics All Sport 3000",
+      "url": null,
+      "place": "Hockey-capable legacy controller; exact Canadian rink installation not yet verified",
+      "evidence": "https://www.daktronics.com/en-us/support/kb/000019670",
+      "source": "https://www.daktronics.com/web-documents/customer-service-manuals/ed12126.pdf",
+      "limits": "Different sport insert and startup codes; not the All Sport 5000 profile.",
+      "status": "Research gap"
+    },
+    {
+      "name": "Daktronics All Sport 2000 / 2600",
+      "url": null,
+      "place": "Hockey-capable legacy family; exact Canadian rink installation not yet verified",
+      "evidence": "https://www.daktronics.com/en-us/support/kb/000019670",
+      "source": "https://www.daktronics.com/web-documents/customer-service-manuals/ed-10102.pdf",
+      "limits": "Legacy sport-code and panel variants need verification before simulation.",
+      "status": "Research gap"
+    },
+    {
+      "name": "All American / Everbrite \u00b7 MP families",
+      "url": null,
+      "place": "Hockey scoreboards marketed by a Quebec arena supplier; exact installed controller model unresolved",
+      "evidence": "https://sport.qc.ca/wp-content/uploads/2021/03/catalogue-arena-2020-pdf.pdf",
+      "source": "https://support.everbrite.com/scoreboards/",
+      "limits": "Canadian market evidence is not proof of a particular rink console. Manufacturer support library lists manuals.",
+      "status": "Research gap"
+    },
+    {
+      "name": "Eversan \u00b7 hockey controls",
+      "url": null,
+      "place": "Canadian distributor carries the brand; exact rink controller installation unresolved",
+      "evidence": "https://www.marchants.com/eversan/",
+      "source": "https://eversan.com/wp-content/uploads/2016/07/9665Spec.pdf",
+      "limits": "Manufacturer hockey spec describes console; need an installed model, photo and operating manual.",
+      "status": "Research gap"
+    },
+    {
+      "name": "Electro-Mech \u00b7 hockey console families",
+      "url": null,
+      "place": "Hockey product documented; Canadian controller installation not yet verified",
+      "evidence": "https://www.electro-mech.com/hockey/scoreboard-lx8750/",
+      "source": "https://www.electro-mech.com/hockey/scoreboard-lx8750/",
+      "limits": "Product evidence only. Need exact legacy/CX console model, Canadian rink evidence and manual.",
+      "status": "Research gap"
+    },
+    {
+      "name": "Other leads: Spectrum, Sportable / Varsity, Colorado Time Systems",
+      "url": null,
+      "place": "Canadian rink use and hockey configuration unverified",
+      "evidence": "https://nesc-timekeeping.fandom.com/wiki/Operating_Scoreboards",
+      "source": "https://nesc-timekeeping.fandom.com/wiki/Operating_Scoreboards",
+      "limits": "Community inventory is a research lead only; it is not Canadian installation evidence or a verified manual.",
+      "status": "Research gap"
+    }
+  ]
+}

@@ -29,3 +29,9 @@ Nevco uses SET/YES/NO entry, MMSS plus tenths for main time, duration-before-jer
 Hamilton 2000 includes 15-entry penalty memories, delayed penalties, misconducts, recall editing, timeouts, warm-up and repeating horn. VisionTime alternate penalties are held previews; queue activation is outside that profile. Daktronics supports the enabled hockey overlay controls, two penalty slots, shots/saves log counters and a simplified timeout.
 
 Independent training aid, with fixed configurations rather than a complete firmware emulator. Inactive keys retain their physical positions, and each profile lists omitted hardware/setup functions. Goals do not automatically cancel penalties. Check the installed overlay, configuration, rink procedures and league rules before operating a real game clock.
+
+## Canadian controller expansion
+
+Twelve playable profiles: the original six plus Nevco MPC-4/K2-28, Nevco MPCW-7, Fair-Play MP-50/70, Scoretec U1000, Harris Time Sportstimer (Cambridge variant), and legacy Rotomatic A3004-PT. Open `/coverage.html` for source evidence and unimplemented/unverified variants. Fair-Play hockey key positions are explicitly a functional layout pending an exact insert photo. No universal Canadian coverage claim. Tests: `node --test tests/*.test.js`.
+
+The root now opens the controller library. Daktronics practice has a dedicated `/daktronics.html` URL. All profile links, metadata and sitemap entries were migrated; `/controllers.html` remains an alternate library URL with the root canonical. The shared interface uses system typography, quiet surfaces and a compact lesson rail; physical console styling stays controller-specific.

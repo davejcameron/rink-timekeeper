@@ -47,3 +47,51 @@ The existing profiles retain their earlier workflows and explicit in-app limits.
 - Hamilton 2000: Cambridge Roadrunners scoreboard/timekeeper instructions, https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf . Extracted the original embedded photo from page 11 (also pictured on page 2) → `dist/assets/hamilton-2000.jpg`. Verified left calculator keypad, central functions and right HOME/GUEST columns. The combined FOULS/SHOTS position is used for hockey shots; basketball BONUS/POSSESSION remain inactive.
 
 Photographs are retained without AI generation or alteration. Colour and housing treatments in the interactive panels are approximations based on the pictured units; installed caps and overlays can vary. Source credits appear beside the larger images inside each profile.
+
+## Expanded Canadian roster (2026-10-24)
+
+See `dist/coverage.json` and `/coverage.html` for the complete evidence inventory and research gaps. No national installed-equipment census is claimed. Twelve live profiles; family and firmware variants remain explicit.
+
+### Nevco MPC-4 · K2-28
+
+- Manual / local operating guide: https://www.hockeycalgary.ca/assets/file/Nevco008-3261.pdf
+- Canadian use: https://www.acadiaminorhockey.ca/uploads/acadiamha/menu_documents/14902.pdf
+- Reference image: `assets/nevco4-panel.png` (Manufacturer photo and overlay diagram).
+- Configuration: Hockey overlay K2-28, configuration 008-3261. No shot clocks. Alternate switch works only with no handheld attached. Ten penalties per side are a trainer limit; hardware has larger per-player memory. Clock modes here expose local time only; automatic startup programs and auxiliary clocks are omitted. Exact-score entry follows the local single-digit guide, with TIME returning to the clock.
+
+### Nevco MPCW-7
+
+- Manual / local operating guide: https://nevcodocs.s3.amazonaws.com/Controls/MPC-7/Hockey.PDF
+- Canadian use: https://www.russellwarriors.ca/the-bench/the-clock/
+- Reference image: `assets/nevco7-panel.png` (Manufacturer hockey overlay diagram).
+- Configuration: 2016 hockey overlay, wired panel time control with no handheld attached. Default minor 2:00, major 5:00; penalty on/off enabled. Main MMSSs commits after five digits; period is separate. Timeout timer 1 is fixed to 30 seconds, displayed on the practice scoreboard; warning options and other timeout timers are omitted. Radio pairing, profiles, installation options, team-name programming and shot clocks are outside this profile. Goal light duration is a practice default.
+
+### Fair-Play MP-50 / MP-70
+
+- Manual / local operating guide: https://www.fair-play.com/wp-content/uploads/2023/03/98-0002-29MP-50_MP-70.pdf
+- Canadian use: https://www.nmhop.ca/_files/ugd/7141f6_117605a6be6445839cff86f0c1a812fa.pdf
+- Reference image: `assets/fairplay-housing.png` (Official MP-70 housing photo · basketball overlay pictured).
+- Configuration: MP-50/70 common hockey workflow; fixed 2/5/10-minute presets, five penalties per side, no 10-minute indicator spots, goal indicators enabled. The manufacturer photo shows the housing with a basketball overlay. Hockey key groups are a functional training arrangement; exact hockey overlay positions remain unverified. OTHER multi-segment penalties, program menus, timeout configuration, interval configuration, shifted penalty tracking and automatic penalty-time correction are omitted. Correcting the main clock preserves penalty times in this trainer.
+
+### Scoretec Ultimatic U1000
+
+- Manual / local operating guide: https://www.hockeycalgary.ca/assets/file/Scoretec%20Score%20Clocks%20Op%27s%20Manual.pdf
+- Canadian use: https://coquitlamminorhockey.org/wp-content/uploads/sites/29/2025/10/scoretec-instructions.pdf
+- Reference image: `assets/scoretec-panel.jpg` (Canadian guide photograph of the Scoretec control panel).
+- Configuration: U1000 control family with shots and player-number display, as described in the manufacturer manual. Five penalty slots per team, two active. Staging uses minutes or M:SS with optional /player. Long holds on CLEAR and STOP/GO PENALTIES take five seconds. Interval mode 1 and count-up limit mode 2 are implemented; full interval programming, time-of-day setup and team timeouts are omitted. Naden appears in the hosted manual title; that does not establish that every Naden console is a U1000.
+
+### Harris Time Sportstimer
+
+- Manual / local operating guide: https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf
+- Canadian use: https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf
+- Reference image: `assets/harris-sportstimer.jpg` (Photographed Cambridge Sportstimer panel).
+- Configuration: Photographed Cambridge Sportstimer variant; unlocked at the start of practice. TIME and INT accept up to 20:00; periods 0–4; penalties up to five slots per side. Practice scoreboard displays two active slots and queues the rest. Slot labels stand in for player numbers because this panel enters a slot, not a jersey. Manual horn uses HORN 0 #; 2/3-minute horn must be configured each period. Exact Type 1 versus Type 2 mapping is unverified. HI indicator programming, passkey and physical unlock behavior are omitted.
+
+### Rotomatic A3004-PT
+
+- Manual / local operating guide: https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf
+- Canadian use: https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf
+- Reference image: `assets/rotomatic-a3004.jpg` (Photographed legacy panel; model label visible on console).
+- Configuration: Legacy A3004-PT label visible in the local guide photograph. Separate tens/units score buttons and two physical penalty timers per team, without jersey entry or an automatic queue. MAIN TIME switch plus START arms the clock. AUTO HORN is the interval toggle, separate from the automatic five-second end horn. Main RESET also sounds the horn. Mechanical key auto-repeat, electromechanical latency and contact behavior are not emulated. No manufacturer manual located; operation is sourced to the local rink guide and photographed panel instructions.
+
+Image provenance: Nevco diagrams rendered unmodified from manufacturer manual cover pages; Fair-Play official product photo https://www.fair-play.com/wp-content/uploads/2020/03/MP-70-72-e1596033209241.png (basketball overlay; housing only). Scoretec panel photo extracted unmodified from South Calgary Ringette guide page 9: https://cloud.rampinteractive.com/southcalgaryringette/files/SCRA%20Policies%20and%20Documents/scra-off-ice-officials-manual.pdf ; CSS rotates its display for reading. Harris and Rotomatic photos extracted unmodified from Cambridge guide pages 3 and 9. No AI-generated controller photos.
