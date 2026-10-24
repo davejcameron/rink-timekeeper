@@ -1,27 +1,31 @@
 # Rinkside
 
-Responsive hockey timekeeper simulator inspired by the Daktronics All Sport 5000.
+A browser and phone hockey timekeeper training simulator with six controller profiles. No build or dependencies are required.
 
-Serve `dist` with any static server (`python3 -m http.server 8080 --directory dist`). No build or dependencies required.
+- Live site: https://rink-timekeeper.tinyaphid17.chatgpt.site
+- Visual controller library: `dist/controllers.html`
+- Serve locally: `python3 -m http.server 8080 --directory dist`
+- Verify behavior: `node --test tests/*.test.js`
 
-Includes MMSS clock entry, jersey/time penalty entry, two penalties per team, manual penalty enable/disable, scores, periods, a timeout, horn, keyboard controls, variable simulation speed, operator log and seven guided drills.
+| Profile | Page | Guided lessons |
+| --- | --- | ---: |
+| Daktronics All Sport 5000 inspired | `dist/index.html` | 43 |
+| Hamilton VisionTime | `dist/hamilton.html` | 56 |
+| Hamilton HDD 2000 PR95019A/PR95022A | `dist/hamilton2000.html` | 69 |
+| OES ISC9000, J12 hockey overlay | `dist/isc9000.html` | 42 |
+| Nevco MPC, hockey configuration code 871 | `dist/nevco.html` | 42 |
+| OES ISC85X hockey overlay | `dist/isc85x.html` | 41 |
 
-Independent training aid, not an exact overlay or firmware replica. See the in-app realism notes and manufacturer documentation: https://www.daktronics.com/en-us/support/controllers/all-sport-5000 . Confirm rink equipment and league procedures before operating a live clock. No automatic penalty cancellation after goals, penalty queue, or main-clock/penalty-time correction.
+Each lesson loads a prepared scenario, checks actual controller state, and supports independent selection, restart and session progress. Topics filter the lesson list. Larger screens show the scoreboard beside the physical console; narrow screens scroll the console horizontally so the button positions stay recognizable. Sound starts on, with held horns and keyboard operation.
 
-## Hamilton VisionTime
+## Controller fidelity
 
-Open `dist/hamilton.html` or use the controller tabs. Based on the Hamilton Digital Designs manual at https://cloud.rampinteractive.com/greatervictoriaminorballhockey/files/Information%20Documents/Clock%20Instructions/panorama_rinkB_clock_instructions_fullversion_april2018.pdf . Includes separate-field game setup, RECALL corrections and penalty deletion, intermission, Toronto time of day, team names, count-up/down and eleven drills. The panel arrangement and telephone-style keypad follow the manual’s Figure 1 (page 6). ALT PEN is a held-timer preview; queueing and activation of alternate penalties are omitted.
+The three additional panels use real controller photographs and manufacturer-authored operating instructions. Their displays, key groups, numeric order, switches, and color coding are recreated in HTML/CSS. The library includes photographs for OES/Nevco and illustrations for the original profiles. Photo/source comparison is available inside each new simulator. See [SOURCES.md](SOURCES.md) for provenance and configuration decisions.
 
-Run behavior checks with `node --test tests/*.test.js`.
+The OES profiles support four penalty rows per team, two active rows, queue release, corrections, shots, intermission and repeating shift timers. The ISC9000 additionally supports queue hold, penalty stop/run, saved stoppage times and basic team name entry. ISC85X presets add minutes; its shared +1 and right-side rocker preserve the documented workflow.
 
-## HDD 2000 series
+Nevco uses SET/YES/NO entry, MMSS plus tenths for main time, duration-before-jersey penalty entry, review/edit/insert/clear, goal indicators, shots, timeout timer 0, chronometer display and a simulated handheld switch. Code 871 identifies the hockey configuration; it does not identify an exact MPC chassis generation.
 
-`dist/hamilton2000.html` is a separate PR95019A/PR95022A hockey profile based on https://erra.ncrrl.on.ca/Resources/HDD_2000series_Manual.pdf (90-19-009). Includes period/setup differences, HOLD PEN MEM, 15-penalty memory, delayed penalties/misconducts, recall penalty editing, shots, timeouts, intermissions, warm-up, repeating horn and abort. Representative layout; hardware setup, printing, serial interfaces and other sports are excluded.
+Hamilton 2000 includes 15-entry penalty memories, delayed penalties, misconducts, recall editing, timeouts, warm-up and repeating horn. VisionTime alternate penalties are held previews; queue activation is outside that profile. Daktronics supports the enabled hockey overlay controls, two penalty slots, shots/saves log counters and a simplified timeout.
 
-## Layout references
-
-Hamilton 2000: manual 90-19-009, page 10. VisionTime: manual MN04009E, page 6 (Figure 1). Cross-checked against https://nesc-timekeeping.fandom.com/wiki/HDD_2000_Series/HDD_VisionTime_Series . Daktronics: manufacturer LL-2436 hockey overlay. Controller layout preserves relative positions; narrow screens scroll the panel. Images are linked as references, not redistributed.
-
-### Guided tutorials
-
-Choose any topic directly: 43 Daktronics, 56 VisionTime, and 69 HDD 2000-series lessons. Each loads an independent prepared game, checks the resulting controller state, and supports restart and session completion tracking. Topics cover all enabled controls, including advanced 2000-series penalty memory, display modes, sound, shortcuts and practice tools. Inactive hardware controls remain outside the simulator scope.
+Independent training aid, with fixed configurations rather than a complete firmware emulator. Inactive keys retain their physical positions, and each profile lists omitted hardware/setup functions. Goals do not automatically cancel penalties. Check the installed overlay, configuration, rink procedures and league rules before operating a real game clock.
