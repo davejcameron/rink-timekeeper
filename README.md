@@ -12,4 +12,8 @@ Independent training aid, not an exact overlay or firmware replica. See the in-a
 
 Open `dist/hamilton.html` or use the controller tabs. Based on the Hamilton Digital Designs quick-start sheet at https://kitchenerminorhockey.com/Pages/41980/Score_Clock_Instructions/ . Includes separate-field game setup, RECALL corrections and penalty deletion, intermission, Toronto time of day, team names, count-up/down and eleven drills. The physical layout and name-entry alphabet are representative. ALT PEN is a held-timer preview; queueing and activation of alternate penalties are omitted.
 
-Run behavior checks with `node --test tests/hamilton.test.js`.
+Run behavior checks with `node --test tests/*.test.js`.
+
+## HDD 2000 series
+
+`dist/hamilton2000.html` is a separate PR95019A/PR95022A hockey profile based on https://erra.ncrrl.on.ca/Resources/HDD_2000series_Manual.pdf (90-19-009). Includes period/setup differences, HOLD PEN MEM, 15-penalty memory, delayed penalties/misconducts, recall penalty editing, shots, timeouts, intermissions, warm-up, repeating horn and abort. Representative layout; hardware setup, printing, serial interfaces and other sports are excluded.
