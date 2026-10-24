@@ -62,7 +62,7 @@ class Nevco7Clock extends RinkFamilyClock {
 }
 class FairPlayClock extends RinkFamilyClock {
  constructor(length=900){super('fairplay',length);this.hornSeconds=5;}
- reset(){super.reset();this.hornSeconds=5;this.shift=false;this.clockSelection=0;}
+ reset(){super.reset();this.hornSeconds=5;this.shift=false;this.clockSelection=0;this.clockReset=this.periodLength;}
  key(k){if(k==='run'||k==='hold'){this.run(k==='run');return;}if(k==='horn'){this.horn(.65);return;}if(k==='auto'){this.autoHorn=!this.autoHorn;this.message='AUTO HORN '+(this.autoHorn?'ON':'OFF');return;}
  if(k==='cancel'){this.done('ENTRY CANCELLED');this.shift=false;return;}if(k==='clear'){if(this.edit?.type==='penSelect'){this.edit.digits='';this.edit.correct=true;this.message='PLAYER NUMBER TO CLEAR / EDIT';}else if(this.edit)this.edit.digits='';return;}
  if(k==='shift'){this.shift=!this.shift;this.message=this.shift?'SHIFT · SELECT FUNCTION':'HK · READY';return;}
@@ -74,7 +74,7 @@ class FairPlayClock extends RinkFamilyClock {
  if(/^(score|shots|goal|penalty):/.test(k)){const [type,side]=k.split(':');if(type==='goal'){this.goal[side]=!this.goal[side];this.done('GOAL LIGHT');}else if(type==='penalty'){this.field('penSelect',0,{side});this.message='PENALTY: +1=2m +2=5m +3=10m OR PLAYER TO EDIT';}else this.field(type,type==='score'?this[side]:this.shots[side],{side});return;}
  if(k==='period'){this.field('period',this.period);return;}
  }
- enter(){const e=this.edit;if(!e)return;const n=e.digits===''?e.value:Number(e.digits);if(e.type==='main'){const t=e.digits?readMMSS(e.digits):e.value;if(t===null){this.message='INVALID SECONDS · CLR';return;}this.view=e.selection===1?'break':'game';if(this.view==='break')this.breakTime=t;else this.time=t;this.done('CLOCK SET');return;}
+ enter(){const e=this.edit;if(!e)return;const n=e.digits===''?e.value:Number(e.digits);if(e.type==='main'){const t=e.digits?readMMSS(e.digits):e.value;if(t===null){this.message='INVALID SECONDS · CLR';return;}this.view=e.selection===1?'break':'game';if(this.view==='break')this.breakTime=t;else{this.time=t;this.clockReset=t;}this.done('CLOCK SET');return;}
  if(['score','shots','period'].includes(e.type)){if(n>(e.type==='period'?9:199)){this.message='VALUE OUT OF RANGE';return;}if(e.type==='period')this.period=n;else if(e.type==='score')this[e.side]=n;else this.shots[e.side]=n;this.done();return;}
  if(e.type==='player'){if(!e.digits){this.done('NO PENALTY FOUND');return;}if(n>99||this.pen[e.side].length>=5){this.message='PENALTY CAPACITY / PLAYER RANGE';return;}this.pen[e.side].push({player:n,remaining:e.remaining});this.done('PENALTY ENTERED');return;}
  if(e.type==='penSelect'){const slot=this.pen[e.side].findIndex(p=>p.player===n);if(slot<0){this.done('NO PENALTY FOUND');return;}this.field('penCorrect',this.pen[e.side][slot].remaining,{side:e.side,slot});this.message='ENTER CANCELS · MMSS ENTER EDITS';return;}

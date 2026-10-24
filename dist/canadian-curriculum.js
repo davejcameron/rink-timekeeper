@@ -26,7 +26,7 @@ function buildCanadianCurriculum(profile){
   add('Sound & timers','auto-off','Turn off the end horn','Auto horn is independent of the browser sound switch.','SET → HORN → NO',['set','horn','no'],done(m=>!m.autoHorn));
   add('Sound & timers','auto-on','Enable the end horn','Restore automatic period-end signalling.','SET → HORN → YES',['set','horn','yes'],done(m=>m.autoHorn),s=>{s.model.autoHorn=false;});
   if(n4){
-   add('Sound & timers','remote','Connect the handheld switch','With the handheld connected, the alternate panel toggle is inactive.','Practice setup → Connect handheld → Alternate switch → Handheld RUN',['remote','rocker','remoteRun'],(m,e)=>e==='key:remoteRun'&&m.remote&&m.running);
+   add('Sound & timers','remote','Connect the handheld switch','With the handheld connected, the alternate panel toggle is inactive.','Remote controls → Connect accessory → Alternate switch → CLOCK ON',['remote','rocker','remoteRun'],(m,e)=>e==='key:remoteRun'&&m.remote&&m.running);
    add('Sound & timers','timeout','Start timeout timer 0','This profile configures one 30-second timeout timer.','TIME OUT TIMER → 0',['timeoutStart','0'],done(m=>m.view==='timeout'&&m.timeoutTime===30));
   }else{
    add('Sound & timers','timeout','Select timeout timer 1','The trainer configures timer 1 to 30 seconds.','TIME OFF → TIME OUT TIMER → 1 → YES → TIME ON',['hold','timeout','1','yes','run'],at('run',m=>m.view==='timeout'&&m.running&&m.timeoutTime===30));

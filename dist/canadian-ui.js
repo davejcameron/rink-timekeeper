@@ -1,6 +1,6 @@
 /* Browser adapter for the documented OES and Nevco hockey profiles. */
 const $=id=>document.getElementById(id),profile=document.body.dataset.profile;
-const clock=new CanadianClocks[profile]();let sound=true,last=performance.now(),training;
+const clock=new CanadianClocks[profile]();let sound=true,last=performance.now(),training,remote=null;
 const hornAudio=new RinkHorn(()=>{$('audio-note').textContent='Browser audio blocked. Check volume and site sound permission.';});
 function fmt(t){t=Math.max(0,t);if(t>0&&t<60)return t.toFixed(1).padStart(4,'0');const n=Math.ceil(t);return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');}
 function log(text){const li=document.createElement('li');li.textContent=fmt(clock.time)+' · '+text;$('log').prepend(li);while($('log').children.length>30)$('log').lastChild.remove();}
@@ -20,13 +20,13 @@ function render(){
  const activeKeys=new Set();if(e){if(['player','penMinutes','penSeconds','review'].includes(e.type))activeKeys.add('penalty:'+e.side);else if(e.type==='score'||e.type==='addscore')activeKeys.add('score:'+e.side);else if(e.type==='shots'||e.type==='addshots')activeKeys.add('shots:'+e.side);else if(['minutes','seconds','fraction','main'].includes(e.type))activeKeys.add(profile==='nevco'?'time':'set');else if(e.type==='period')activeKeys.add('period');}
  document.querySelectorAll('[data-key]').forEach(b=>b.classList.toggle('entry-active',activeKeys.has(b.dataset.key)));
 }
-function key(k){clock.key(k);if(k==='horn'&&profile==='nevco4'&&!clock.set&&!clock.edit)pulse();training?.observe('key:'+k);for(const event of clock.events.splice(0))if(event==='horn'||event?.type==='horn')pulse(event.seconds||clock.hornSeconds||.65);if(!/^\d$/.test(k))log(clock.message);render();}
+function key(k){if(remote&&['remote','remoteRun'].includes(k)){remote.command(k==='remote'?(remote.connected?'disconnect':'connect'):'toggle');return;}if(remote?.panel(k)){render();training?.observe('key:'+k);return;}clock.key(k);if(k==='horn'&&profile==='nevco4'&&!clock.set&&!clock.edit)pulse();training?.observe('key:'+k);for(const event of clock.events.splice(0))if(event==='horn'||event?.type==='horn')pulse(event.seconds||clock.hornSeconds||.65);if(!/^\d$/.test(k))log(clock.message);render();}
 for(const b of document.querySelectorAll('[data-key]'))b.onclick=()=>key(b.dataset.key);
 function setSound(value){sound=value;hornAudio.setMuted(!sound);$('sound').textContent='Sound '+(sound?'on':'off');$('sound').setAttribute('aria-pressed',String(sound));$('audio-note').textContent='';}
 $('sound').onclick=()=>{setSound(!sound);if(sound)pulse();training.observe('ui:sound');};
 $('length').onchange=()=>{log('Period preference applies on reset');training.observe('ui:length');};$('speed').onchange=()=>training.observe('ui:speed');
-$('reset').onclick=()=>{if(confirm('Reset clock, scores and penalties?')){clock.periodLength=Number($('length').value);clock.reset();last=performance.now();render();log('New practice game');training.observe('ui:reset');}};
-training=new RinkTutorials({profile,getState:()=>({model:clock,sound,speed:Number($('speed').value),length:Number($('length').value),setSound}),resetScenario:()=>{$('length').value='900';$('speed').value='1';clock.periodLength=900;clock.reset();setSound(true);last=performance.now();},onRender:render,log});
+$('reset').onclick=()=>{if(confirm('Reset clock, scores and penalties?')){clock.periodLength=Number($('length').value);clock.reset();remote?.reset();last=performance.now();render();log('New practice game');training.observe('ui:reset');}};
+training=new RinkTutorials({profile,getState:()=>({model:clock,remote,sound,speed:Number($('speed').value),length:Number($('length').value),setSound}),resetScenario:()=>{$('length').value='900';$('speed').value='1';clock.periodLength=900;clock.reset();remote?.reset();setSound(true);last=performance.now();},onRender:render,log});
 const hornButton=document.querySelector('[data-key="horn"]');let voice=null,hornLimit;
 function releaseHorn(){clearTimeout(hornLimit);hornAudio.release(voice);voice=null;document.body.classList.remove('honking');}
 function holdHorn(){if(['nevco4','nevco7'].includes(profile)&&clock.set){key('horn');return;}document.body.classList.add('honking');if(sound)voice=hornAudio.hold();else $('audio-note').textContent='Horn muted. Tap Sound off to enable audio.';training.observe('key:horn');if(profile==='nevco4'||profile==='nevco7')hornLimit=setTimeout(releaseHorn,4000);}
@@ -38,3 +38,5 @@ setInterval(()=>{const now=performance.now();clock.tick((now-last)/1000*Number($
 
 // Scoretec documents a five-second hold for these secondary functions.
 if(profile==='scoretec')for(const [selector,heldKey,tapKey]of [['clear','resetHeld','clear'],['penToggle','penHeld','penToggle']]){const b=document.querySelector('[data-key="'+selector+'"]');let timer,held=false;const begin=()=>{held=false;timer=setTimeout(()=>{held=true;key(heldKey);},5000);};const end=()=>clearTimeout(timer);b.onclick=e=>{if(!held)key(tapKey);};b.onpointerdown=e=>{b.setPointerCapture(e.pointerId);begin();};b.onpointerup=end;b.onpointercancel=end;b.onkeydown=e=>{if([' ','Enter'].includes(e.key)&&!e.repeat){e.preventDefault();begin();}};b.onkeyup=e=>{if([' ','Enter'].includes(e.key)){e.preventDefault();end();if(!held)key(tapKey);}};window.addEventListener('blur',end);}
+
+remote=mountRinkRemotes({profile,model:clock,audio:hornAudio,isSound:()=>sound,run:on=>{if(typeof clock.run==='function')clock.run(on);else clock.key(on?'run':'hold');},observe:event=>training.observe(event),render:()=>{for(const event of clock.events.splice(0))if(event==='horn'||event?.type==='horn')pulse(event.seconds||clock.hornSeconds||.65);render();}});

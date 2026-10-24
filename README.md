@@ -35,3 +35,7 @@ Independent training aid, with fixed configurations rather than a complete firmw
 Twelve playable profiles: the original six plus Nevco MPC-4/K2-28, Nevco MPCW-7, Fair-Play MP-50/70, Scoretec U1000, Harris Time Sportstimer (Cambridge variant), and legacy Rotomatic A3004-PT. Open `/coverage.html` for source evidence and unimplemented/unverified variants. Fair-Play hockey key positions are explicitly a functional layout pending an exact insert photo. No universal Canadian coverage claim. Tests: `node --test tests/*.test.js`.
 
 The root now opens the controller library. Daktronics practice has a dedicated `/daktronics.html` URL. All profile links, metadata and sitemap entries were migrated; `/controllers.html` remains an alternate library URL with the root canonical. The shared interface uses system typography, quiet surfaces and a compact lesson rail; physical console styling stays controller-specific.
+
+## Optional remotes
+
+Open Remote controls beside the console photo link. Seven controller profiles support verified remote configurations, with thirteen accessory/mode choices and 46 additional lessons (516 lessons total). Nevco TCS5/TCS7 console lock and unplug/restart recovery are simulated; Fair-Play distinguishes wired time switches from exclusive MiClock mode. OES and VisionTime shots accessories are included. See REMOTES.md for model/firmware assumptions and explicitly unimplemented optional play-timer accessories.

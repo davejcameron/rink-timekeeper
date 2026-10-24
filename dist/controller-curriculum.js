@@ -37,7 +37,7 @@ function buildControllerCurriculum(profile){
   add('Timeout & display','main-display','Return to main time','TIME recalls the main time display.','TIME',['time'],key('time',m=>m.view==='game'&&m.time===900),s=>{s.model.view='time';});
   add('Horn & remote','auto-off','Disable the automatic horn','SET HORN opens a yes/no setting. Manual horn remains available.','SET → HORN → NO',['set','horn','no'],key('no',m=>!m.autoHorn));
   add('Horn & remote','auto-on','Enable the automatic horn','Restore end-of-period signals.','SET → HORN → YES',['set','horn','yes'],key('yes',m=>m.autoHorn),s=>{s.model.autoHorn=false;});
-  add('Horn & remote','remote','Use a handheld time switch','Connecting the handheld disables panel TIME ON/OFF. Use the separate practice switch.','Practice setup → Connect handheld → Handheld RUN/STOP',['remote','remoteRun'],key('remoteRun',m=>m.remote&&m.running));
+  add('Horn & remote','remote','Use a handheld time switch','Connecting the handheld disables panel TIME ON/OFF. Use the separate practice switch.','Remote controls → Connect accessory → CLOCK ON',['remote','remoteRun'],key('remoteRun',m=>m.remote&&m.running));
   add('Horn & remote','options','Read the controller settings','OPTIONS reports this simulator’s selected configuration. Hardware configuration and bookmarks are outside this profile.','OPTIONS',['options'],key('options',m=>m.message.includes('CODE 871')));
  }else{
   add('Clock basics','time','Set game time','OES edits minutes, seconds and hundredths separately. Stop all timers before entry.','GAME TIME → 15 → ENTER → 0 → ENTER → 0 → ENTER',['set','1','5','enter','0','enter','0','enter'],finish(m=>m.time===900),s=>{s.model.time=600;});

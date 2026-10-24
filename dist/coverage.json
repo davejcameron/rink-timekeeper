@@ -200,5 +200,20 @@
       "limits": "Community inventory is a research lead only; it is not Canadian installation evidence or a verified manual.",
       "status": "Research gap"
     }
-  ]
+  ],
+  "remote_coverage": {
+    "profiles": [
+      "dak",
+      "nevco",
+      "nevco4",
+      "nevco7",
+      "isc9000",
+      "vision",
+      "fairplay"
+    ],
+    "training_configurations": 13,
+    "new_lessons": 46,
+    "source": "https://github.com/davejcameron/rink-timekeeper/blob/main/REMOTES.md",
+    "limits": "Exact hardware and firmware required; optional play-timer accessories and unverified external time switches are not emulated."
+  }
 }
