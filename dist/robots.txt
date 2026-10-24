@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rink-timekeeper.tinyaphid17.chatgpt.site/sitemap.xml
