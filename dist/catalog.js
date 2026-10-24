@@ -1,8 +1,8 @@
 /* Six controller families, with a compact switcher and a visual identification page. */
 const rinkControllers=[
- {id:'dak',name:'Daktronics All Sport 5000',short:'Daktronics 5000',url:'index.html',family:'Daktronics',note:'Wide hockey overlay · separate numeric keypad',diagram:'dak',lessons:43},
- {id:'vision',name:'Hamilton VisionTime',short:'Hamilton VisionTime',url:'hamilton.html',family:'Hamilton',note:'Telephone keypad · A/B/C/D function keys',diagram:'vision',lessons:56},
- {id:'2000',name:'Hamilton HDD 2000',short:'Hamilton HDD 2000',url:'hamilton2000.html',family:'Hamilton',note:'Calculator keypad · 15-entry penalty memory',diagram:'2000',lessons:69},
+ {id:'dak',name:'Daktronics All Sport 5000',short:'Daktronics 5000',url:'index.html',family:'Daktronics',note:'Wide hockey overlay · separate numeric keypad',photo:'assets/daktronics-5000.jpg',lessons:43},
+ {id:'vision',name:'Hamilton VisionTime',short:'Hamilton VisionTime',url:'hamilton.html',family:'Hamilton',note:'Telephone keypad · A/B/C/D function keys',photo:'assets/hamilton-visiontime.jpg',lessons:56},
+ {id:'2000',name:'Hamilton HDD 2000',short:'Hamilton HDD 2000',url:'hamilton2000.html',family:'Hamilton',note:'Calculator keypad · 15-entry penalty memory',photo:'assets/hamilton-2000.jpg',lessons:69},
  {id:'isc9000',name:'OES ISC9000',short:'OES ISC9000',url:'isc9000.html',family:'OES',note:'Blue LCD · 4 × 8 hockey function panel',photo:'assets/oes-isc9000.jpg'},
  {id:'nevco',name:'Nevco MPC · Hockey 871',short:'Nevco MPC · 871',url:'nevco.html',family:'Nevco',note:'Red LED strip · SET, YES and NO controls',photo:'assets/nevco-mpc.jpg'},
  {id:'isc85x',name:'OES ISC85X',short:'OES ISC85X',url:'isc85x.html',family:'OES',note:'Green LCD · rocker switch · time presets',photo:'assets/oes-isc85x.jpg'}

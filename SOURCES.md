@@ -38,4 +38,12 @@ The manual cover and photo establish two 4×5 key groups, SET/YES/NO, calculator
 - HDD 2000 manual 90-19-009, panel page 10: https://erra.ncrrl.on.ca/Resources/HDD_2000series_Manual.pdf
 - Hamilton photographic cross-reference: https://nesc-timekeeping.fandom.com/wiki/HDD_2000_Series/HDD_VisionTime_Series
 
-The existing profiles retain their earlier workflows and explicit in-app limits. Their controller-library thumbnails are code-native illustrations, not photographs.
+The existing profiles retain their earlier workflows and explicit in-app limits. Their controller-library thumbnails now use verified reference photographs (see below).
+
+## Hamilton and Daktronics photographs
+
+- All Sport 5000 hockey-overlay console: Mitchell Marlins volunteer training, https://www.mitchellmarlins.com/page/show/6723639-volunteer-training-and-info . Original photo https://cdn1.sportngin.com/attachments/photo/e216-164541916/timeclock_large.jpg → `dist/assets/daktronics-5000.jpg`. Checked visible hockey penalty keys rather than using a different sport overlay.
+- Hamilton VisionTime: NESC Timekeeping Wiki, https://nesc-timekeeping.fandom.com/wiki/HDD_2000_Series/HDD_VisionTime_Series . Original photo https://static.wikia.nocookie.net/nesc-timekeeping/images/3/33/HDD_controller_pic.jpg/revision/latest?cb=20150628163415 → `dist/assets/hamilton-visiontime.jpg`. Verified right-hand telephone keypad, left team keys and central round controls. The separate `HDD_visiontime.jpg` is a drawing, so it is not used as the photograph.
+- Hamilton 2000: Cambridge Roadrunners scoreboard/timekeeper instructions, https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf . Extracted the original embedded photo from page 11 (also pictured on page 2) → `dist/assets/hamilton-2000.jpg`. Verified left calculator keypad, central functions and right HOME/GUEST columns. The combined FOULS/SHOTS position is used for hockey shots; basketball BONUS/POSSESSION remain inactive.
+
+Photographs are retained without AI generation or alteration. Colour and housing treatments in the interactive panels are approximations based on the pictured units; installed caps and overlays can vary. Source credits appear beside the larger images inside each profile.

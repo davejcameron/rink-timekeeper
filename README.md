@@ -20,7 +20,7 @@ Each lesson loads a prepared scenario, checks actual controller state, and suppo
 
 ## Controller fidelity
 
-The three additional panels use real controller photographs and manufacturer-authored operating instructions. Their displays, key groups, numeric order, switches, and color coding are recreated in HTML/CSS. The library includes photographs for OES/Nevco and illustrations for the original profiles. Photo/source comparison is available inside each new simulator. See [SOURCES.md](SOURCES.md) for provenance and configuration decisions.
+The three additional panels use real controller photographs and manufacturer-authored operating instructions. Their displays, key groups, numeric order, switches, and color coding are recreated in HTML/CSS. The library includes verified reference photographs for all six controllers. Photo/source comparison is available inside each new simulator. See [SOURCES.md](SOURCES.md) for provenance and configuration decisions.
 
 The OES profiles support four penalty rows per team, two active rows, queue release, corrections, shots, intermission and repeating shift timers. The ISC9000 additionally supports queue hold, penalty stop/run, saved stoppage times and basic team name entry. ISC85X presets add minutes; its shared +1 and right-side rocker preserve the documented workflow.
 
