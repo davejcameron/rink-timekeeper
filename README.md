@@ -21,3 +21,7 @@ Run behavior checks with `node --test tests/*.test.js`.
 ## Layout references
 
 Hamilton 2000: manual 90-19-009, page 10. VisionTime: manual MN04009E, page 6 (Figure 1). Cross-checked against https://nesc-timekeeping.fandom.com/wiki/HDD_2000_Series/HDD_VisionTime_Series . Daktronics: manufacturer LL-2436 hockey overlay. Controller layout preserves relative positions; narrow screens scroll the panel. Images are linked as references, not redistributed.
+
+### Guided tutorials
+
+Choose any topic directly: 43 Daktronics, 56 VisionTime, and 69 HDD 2000-series lessons. Each loads an independent prepared game, checks the resulting controller state, and supports restart and session completion tracking. Topics cover all enabled controls, including advanced 2000-series penalty memory, display modes, sound, shortcuts and practice tools. Inactive hardware controls remain outside the simulator scope.
