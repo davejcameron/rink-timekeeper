@@ -39,3 +39,7 @@ The root now opens the controller library. Daktronics practice has a dedicated `
 ## Optional remotes
 
 Open Remote controls beside the console photo link. Seven controller profiles support verified remote configurations, with thirteen accessory/mode choices and 46 additional lessons (516 lessons total). Nevco TCS5/TCS7 console lock and unplug/restart recovery are simulated; Fair-Play distinguishes wired time switches from exclusive MiClock mode. OES and VisionTime shots accessories are included. See REMOTES.md for model/firmware assumptions and explicitly unimplemented optional play-timer accessories.
+
+## Test yourself
+
+Each controller has an eight-task assessment with shuffled scenarios and variable game-time targets, scores and penalty player numbers. Tasks show outcomes rather than button sequences. Check answer validates the current state; revealing a solution or restarting marks that task assisted. Skipped tasks and review sequences appear in the session-only results. Guided tutorials remain available separately.

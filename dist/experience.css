@@ -33,3 +33,5 @@
 .newworkspace .rotomatic .knobs .roto-switch::after{content:'';position:absolute;left:calc(50% - 4px);top:30px;width:8px;height:23px;border-radius:5px;background:linear-gradient(90deg,#585e50,#e0e0c8 40%,#898c75 70%,#3a4438);border:1px solid #555d49;transform:rotate(26deg);transform-origin:50% 2px;box-shadow:2px 2px 2px #0006;transition:transform .12s,top .12s}
 .newworkspace .rotomatic .knobs .roto-switch[aria-pressed=true]::after{top:9px;transform-origin:50% 22px;transform:rotate(-26deg)}
 .newworkspace .rotomatic .roto-team h3{font:bold 12px Arial,sans-serif;margin:10px 0 2px}.newworkspace .rotomatic .roto-team>b{font:bold 12px Arial,sans-serif;letter-spacing:1px}
+
+.test-actions{display:flex;gap:14px;margin-top:14px}.test-actions[hidden]{display:none}.test-actions button{border:0;background:none;color:#0066cc;font:11px system-ui;padding:8px 0}.test-actions button:disabled{color:#86868b}.test-result{padding:9px 0;border-bottom:1px solid #e8e8ed}.test-result strong{color:#1d1d1f}.test-result small{display:block;margin-top:5px}.lesson-picker select:disabled{opacity:.55}
