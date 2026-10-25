@@ -35,3 +35,7 @@
 .newworkspace .rotomatic .roto-team h3{font:bold 12px Arial,sans-serif;margin:10px 0 2px}.newworkspace .rotomatic .roto-team>b{font:bold 12px Arial,sans-serif;letter-spacing:1px}
 
 .test-actions{display:flex;gap:14px;margin-top:14px}.test-actions[hidden]{display:none}.test-actions button{border:0;background:none;color:#0066cc;font:11px system-ui;padding:8px 0}.test-actions button:disabled{color:#86868b}.test-result{padding:9px 0;border-bottom:1px solid #e8e8ed}.test-result strong{color:#1d1d1f}.test-result small{display:block;margin-top:5px}.lesson-picker select:disabled{opacity:.55}
+
+.test-scenario{display:none}.is-testing .lesson-picker{display:none}@media(max-width:1100px){.test-scenario:not([hidden]){display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:center;background:#fff;border:1px solid #dce4ef;border-left:3px solid #0071e3;border-radius:12px;padding:16px;margin-bottom:18px;scroll-margin-top:14px}.test-scenario>small:first-child{grid-column:1/-1;font:600 9px system-ui;letter-spacing:.8px;color:#497296}.test-scenario p{margin:0;font:500 14px/1.5 system-ui;color:#1d1d1f}.test-scenario button{border:0;border-radius:99px;background:#0071e3;color:#fff;padding:11px 15px;font:500 11px system-ui;white-space:nowrap}.test-scenario>small:last-child{grid-column:1/-1;font:11px/1.5 system-ui;color:#6e6e73}.test-scenario>small:last-child:empty{display:none}}
+
+@media(max-width:1100px){.test-scenario:not([hidden]){position:sticky;top:8px;z-index:12;box-shadow:0 4px 18px #00000008}}
