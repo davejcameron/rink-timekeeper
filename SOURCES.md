@@ -112,3 +112,9 @@ See REMOTES.md for the seven compatible console profiles, thirteen training acce
 - OES ISC9000 J12 v1.3 printed p27: goal light is held. Home/guest assignments in the trainer are fixed, while physical arrows refer to rink direction.
 
 The Fair-Play library diagram is original SVG labelled as functional, with unverified insert positions. The actual manufacturer housing photo remains inside the profile and is explicitly labelled as a basketball insert.
+
+## Contributor gap research checked 2026-10-25
+
+The supplied research is a set of search findings, not an installed-equipment census. Newly confirmed primary references: Eversan Model 9775 manual (includes hockey mode); Fair-Play MP-80/60 operating knowledge base; OES Edge and HHX manufacturer spec sheets; and Harris Type 1 / Type 2 operating-download pages. See coverage.json additional_documents. The existing Electro-Mech hockey-specific CX v4.0.1 handbook was already located in the previous audit; unrelated football manuals are not substituted. The OES manufacturer HHX J2.1 manual currently linked is issued 2022-02-04; it is not assumed identical to an older 2017 mirror.
+
+Unverified contributor leads (not promoted to verified Canadian installation evidence): Spectrum Multisport mirrors and MSX output setup; Colorado Time Systems WTTC/WHC hockey resources; Eversan console variants; Everbrite non-hockey operating manuals. No public driving protocol is claimed. These browser simulators model documented button sequences and do not send data to physical scoreboards. “Not found” is a search result, not proof of absence.

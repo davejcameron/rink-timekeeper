@@ -40,25 +40,38 @@ contact+='<section class="help-section"><h2>Prepare your report.</h2><p>No GitHu
 page('contact','Contact & report a controller','Prepare a public GitHub issue for a bug, missing controller, arena update or timekeeping simulator question.',contact,'<script src="resources.js"></script>')
 finder=hero('CONTROLLER FINDER','Find the panel in front of you.','Start with an arena report, a recognizable feature, or the model label. Always compare the installed hockey insert before practising.')
 finder+='<div class="finder-tabs" role="group" aria-label="Choose a way to find your controller"><button data-finder="arena" aria-pressed="true">By arena</button><button data-finder="visual" aria-pressed="false">By appearance</button><button data-finder="model" aria-pressed="false">By model</button></div><section class="help-section" id="finder-arena"><h2>Look up a documented arena.</h2><p>These are sourced reports, not a live equipment inventory. Each match shows its age and confidence.</p><div class="form-grid"><label>Arena or city<input type="search" id="arena-search" placeholder="e.g. Panorama, Cambridge, Ottawa"></label><label>Province / territory<select id="arena-region"><option value="">All provinces & territories</option></select></label></div><p id="arena-count" role="status"></p><div id="arena-results" class="arena-results"></div><p>No match? <button class="text-button" data-finder="visual">Identify by appearance</button> or <a href="contact.html">report your arena</a>.</p></section><section class="help-section" id="finder-visual" hidden><h2>What does your panel look like?</h2><p>Choose a distinctive feature, then compare the photos. This is a guided visual comparison, not automatic image recognition.</p><div id="visual-choices" class="visual-choices"></div><p id="visual-status" role="status"></p><div id="visual-results" class="controller-library"></div></section><section class="help-section" id="finder-model" hidden><h2>Read the model label.</h2><label>Brand, model or key legend<input type="search" id="model-search" placeholder="e.g. ISC9000, K2-28, PR04200"></label><p id="model-count" role="status"></p><div id="model-results" class="controller-library"></div></section>'
+arena_data=json.loads((D/'arenas.json').read_text())
+arena_cards=[]
+for a in arena_data['arenas']:
+ target=next((c for c in rows if c['url'] and c['url'].replace('.html','')=={'dak':'daktronics','vision':'hamilton','2000':'hamilton2000'}.get(a['profile'],a['profile'])),None)
+ match_link=('<a href="'+esc(target['url'])+'">Compare '+esc(target['name'])+' →</a>') if target else '<a href="contact.html">Help identify this controller</a>'
+ arena_cards.append('<article class="arena-card"><small>'+esc(a['city']+', '+a['region'])+'</small><h3>'+esc(a['arena'])+'</h3><p class="match">'+esc(a['controller'])+'</p><p>'+esc(a['notes'])+'</p><small>Source: '+esc(a['date'])+' · Checked '+esc(arena_data['checked'])+'</small><p><a href="'+esc(a['source'])+'" target="_blank" rel="noreferrer">Read arena source ↗</a> · '+match_link+'</p></article>')
+finder=finder.replace('<p id="arena-count" role="status"></p>','<p id="arena-count" role="status">'+str(len(arena_cards))+' sourced arena reports · Verify the equipment at the rink.</p>').replace('<div id="arena-results" class="arena-results"></div>','<div id="arena-results" class="arena-results">'+''.join(arena_cards)+'</div>')
+finder+='<script type="application/json" id="arena-data">'+json.dumps(arena_data).replace('<','\\u003c')+'</script>'
 page('controllers','Find your hockey score clock controller','Identify your rink controller through sourced arena reports, a visual panel-matching flow or model search.',finder,'<script src="catalog.js"></script><script src="finder.js"></script>')
 # A standalone, static index remains useful without JavaScript.
 manuals=hero('MANUALS & QUICK GUIDES','The right instructions. One place.','Manufacturer manuals, association-hosted copies and local rink guides, with their provenance kept visible.')
-manuals+='<label class="manual-search">Filter by brand, model or document type<input id="manual-search" type="search" placeholder="e.g. OES, manufacturer manual, Rotomatic"></label><p id="manual-count" role="status"></p><div id="manual-list">'
+manuals+='<label class="manual-search">Filter by brand, model or document type<input id="manual-search" type="search" placeholder="e.g. OES, manufacturer manual, Rotomatic"></label><p id="manual-count" role="status">12 operating guides for playable profiles · 10 research references (not playable)</p><div id="manual-list">'
 for c in rows:
  name=c['name'];kind='Manufacturer manual';host='Manufacturer website'
  if 'Rotomatic' in name or 'Sportstimer' in name:kind='Local rink operating guide';host='Cambridge Roadrunners · 2016';
  elif 'VisionTime' in name:kind='Manufacturer-authored manual';host='Greater Victoria Minor Ball Hockey mirror'
  elif 'HDD 2000' in name:kind='Manufacturer-authored manual';host='ERRA association mirror'
  elif 'Scoretec' in name:kind='Manufacturer-authored manual';host='Hockey Calgary mirror'
- elif 'Eversan' in name:kind='Manufacturer product specification';host='Specification sheet · operating manual not located'
+ elif 'Eversan' in name:kind='Manufacturer instruction manual';host='Model 9775 multi-purpose board · includes hockey mode'
  elif 'Other leads:' in name:kind='Community research lead';host='Unverified lead · not a manufacturer manual'
  elif 'ISC9000' in name:kind='Manufacturer-authored manual';host='Burlington Ringette mirror · J12 v1.3'
  elif 'ISC85X' in name:kind='Local hockey operating guide';host='NMHOP association mirror'
  elif '871' in name:host='ERRA association mirror'
  elif 'MPC-4' in name:host='Hockey Calgary mirror'
+ elif name=='Harris Time Type 1 / Type 2':kind='Manufacturer instruction downloads';host='Type 1 and Type 2 documents available; hardware mapping unresolved'
+ elif name=='Fair-Play MP-60 / MP-80':kind='Manufacturer reference & operating articles';host='Hockey setup articles linked; exact hockey insert still unverified'
  elif not c['url'] and not c['source'].lower().endswith('.pdf'):kind='Reference / support library';host='Exact operating manual may still be missing'
  elif not c['url']:host='Manufacturer source · no simulator yet'
- manuals+=f'<article class="manual-card" data-search="{esc((name+kind+host).lower())}"><div><span class="doc-type">{esc(kind)}</span><h2>{esc(name)}</h2><p>{esc(host)}</p></div><div class="manual-links"><a href="{esc(c["source"])}" target="_blank" rel="noreferrer">Open document / source ↗</a>'+(f'<a href="{esc(c["url"])}">Open simulator →</a>' if c['url'] else '<span>Research reference · not playable</span>')+f'</div><p class="manual-limit">{esc(c["limits"])}</p></article>'
+ manuals+=f'<article class="manual-card" data-category="{'operating' if c['url'] else 'research'}" data-search="{esc((name+kind+host).lower())}"><div><span class="doc-type">{esc(kind)}</span><h2>{esc(name)}</h2><p>{esc(host)}</p></div><div class="manual-links"><a href="{esc(c["source"])}" target="_blank" rel="noreferrer">Open document / source ↗</a>'+(f'<a href="{esc(c["url"])}">Open simulator →</a>' if c['url'] else '<span>Research reference · not playable</span>')+f'</div><p class="manual-limit">{esc(c["limits"])}</p></article>'
+for c in rows:
+ for doc in c.get('additional_documents',[]):
+  manuals+='<p class="source-note"><b>'+esc(c['name'])+'</b> · <a href="'+esc(doc['url'])+'" target="_blank" rel="noreferrer">'+esc(doc['label'])+' ↗</a></p>'
 manuals+='</div><p>Files remain on the linked host. A manufacturer-authored manual hosted by an association is a mirror, not a manufacturer-hosted download. Rotomatic currently has a local guide, not a located manufacturer manual.</p>'
 page('manuals','Hockey score clock manuals & controller guides','Find operating manuals and local guides for Daktronics, Hamilton, OES, Nevco, Fair-Play, Scoretec, Harris Time and Rotomatic.',manuals,'<script src="resources.js"></script>')
 print('Built seven reference and finder pages')

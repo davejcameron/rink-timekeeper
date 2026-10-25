@@ -190,7 +190,8 @@
       "profile": null,
       "source": "https://ringuettelaval.com/wp-content/uploads/sites/563/2023/06/Panneau_Nevco.pdf",
       "date": "June 2023 hosted instructions",
-      "notes": "Association guide documents a five-digit time entry and dedicated penalty keys. Model label and exact hockey overlay are still needed before assigning a simulator."
+      "notes": "Ringette association evidence; hockey configuration and hardware mapping are unverified. Association guide documents a five-digit time entry and dedicated penalty keys. Model label and exact hockey overlay are still needed before assigning a simulator.",
+      "sport": "Ringette"
     },
     {
       "arena": "Place Bell",
@@ -200,7 +201,8 @@
       "profile": null,
       "source": "https://ringuettelaval.com/candidature/marqueur-marqueuse/",
       "date": "association page checked October 2026",
-      "notes": "The association links an OES panel guide for Place Bell. A brand reference alone does not establish ISC9000 or ISC85X."
+      "notes": "Ringette association evidence; hockey configuration and hardware mapping are unverified. The association links an OES panel guide for Place Bell. A brand reference alone does not establish ISC9000 or ISC85X.",
+      "sport": "Ringette"
     }
   ]
 }

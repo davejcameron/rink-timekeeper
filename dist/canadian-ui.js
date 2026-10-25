@@ -1,8 +1,9 @@
 /* Browser adapter for the documented OES and Nevco hockey profiles. */
 const $=id=>document.getElementById(id),profile=document.body.dataset.profile;
 const clock=new CanadianClocks[profile]();let sound=true,last=performance.now(),training,remote=null;
+if(profile==='rotomatic')clock.loadPracticePeriod();
 const hornAudio=new RinkHorn(()=>{$('audio-note').textContent='Browser audio blocked. Check volume and site sound permission.';});
-function fmt(t){t=Math.max(0,t);if(t>0&&t<60)return t.toFixed(1).padStart(4,'0');const n=Math.ceil(t);return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');}
+function fmt(t){if(profile==='rotomatic')return CanadianClocks.rotomatic.formatTime(t);t=Math.max(0,t);if(t>0&&t<60)return t.toFixed(1).padStart(4,'0');const n=Math.ceil(t);return String(Math.floor(n/60)).padStart(2,'0')+':'+String(n%60).padStart(2,'0');}
 function log(text){const li=document.createElement('li');li.textContent=fmt(clock.time)+' · '+text;$('log').prepend(li);while($('log').children.length>30)$('log').lastChild.remove();}
 function pulse(duration=.65){document.body.classList.add('honking');setTimeout(()=>document.body.classList.remove('honking'),duration*1000);if(sound)hornAudio.pulse(duration);else $('audio-note').textContent='Horn muted. Tap Sound off to enable audio.';}
 function render(){
@@ -16,7 +17,7 @@ function render(){
  $('screen-shift').textContent=clock.shiftSet>0?'SHIFT '+fmt(clock.shiftTime):'';
  if($('remote-connect')){$('remote-connect').textContent=clock.remote?'Disconnect handheld':'Connect handheld';$('remote-switch').disabled=!clock.remote;$('remote-switch').textContent='Handheld '+(clock.running?'STOP':'RUN');}
  const rocker=document.querySelector('[data-key="rocker"]');if(rocker){rocker.setAttribute('aria-pressed',String(clock.running));}
- if(profile==='rotomatic'){for(const [k,on] of Object.entries({penToggle:clock.penSwitch,mainToggle:clock.mainSwitch,auto:clock.repeatEnabled,intervalSelect:clock.repeatMinutes===3})){const b=document.querySelector('[data-key="'+k+'"]');b.setAttribute('aria-pressed',String(on));b.dataset.position=on?'on':'off';b.setAttribute('aria-label',b.textContent.trim()+': '+(k==='intervalSelect'?(on?'3 minutes':'2 minutes'):(on?'on':'off')));}}
+ if(profile==='rotomatic'){for(const [k,on] of Object.entries({penToggle:clock.penSwitch,mainToggle:clock.mainSwitch,auto:clock.repeatEnabled,intervalSelect:clock.repeatMinutes===3})){const b=document.querySelector('[data-key="'+k+'"]');b.setAttribute('aria-pressed',String(on));b.dataset.position=on?'on':'off';b.setAttribute('aria-label',({penToggle:'Penalty time on/off',mainToggle:'Main time on/off',auto:'Auto horn on/off',intervalSelect:'3 min / 2 min selector'}[k])+': '+(k==='intervalSelect'?(on?'3 minutes':'2 minutes'):(on?'on':'off')));}}
  const memory=$('penalty-memory');memory.replaceChildren();for(const side of ['home','guest']){const p=document.createElement('p');p.textContent=side.toUpperCase()+': '+(clock.pen[side].map((pen,i)=>pen?'#'+pen.player+' '+fmt(pen.remaining)+(i>=2?' · queued':''):'empty').join(' / ')||'No penalties');memory.append(p);}
  const activeKeys=new Set();if(e){if(['player','penMinutes','penSeconds','review'].includes(e.type))activeKeys.add('penalty:'+e.side);else if(e.type==='score'||e.type==='addscore')activeKeys.add('score:'+e.side);else if(e.type==='shots'||e.type==='addshots')activeKeys.add('shots:'+e.side);else if(['minutes','seconds','fraction','main'].includes(e.type))activeKeys.add(profile==='nevco'?'time':'set');else if(e.type==='period')activeKeys.add('period');}
  document.querySelectorAll('[data-key]').forEach(b=>b.classList.toggle('entry-active',activeKeys.has(b.dataset.key)));
@@ -26,7 +27,7 @@ for(const b of document.querySelectorAll('[data-key]'))b.onclick=()=>key(b.datas
 function setSound(value){sound=value;hornAudio.setMuted(!sound);$('sound').textContent='Sound '+(sound?'on':'off');$('sound').setAttribute('aria-pressed',String(sound));$('audio-note').textContent='';}
 $('sound').onclick=()=>{setSound(!sound);if(sound)pulse();training.observe('ui:sound');};
 $('length').onchange=()=>{log('Period preference applies on reset');training.observe('ui:length');};$('speed').onchange=()=>training.observe('ui:speed');
-$('reset').onclick=()=>{if(confirm('Reset clock, scores and penalties?')){clock.periodLength=Number($('length').value);clock.reset();remote?.reset();last=performance.now();render();log('New practice game');training.observe('ui:reset');}};
+$('reset').onclick=()=>{if(confirm('Reset clock, scores and penalties?')){clock.periodLength=Number($('length').value);if(profile==='rotomatic')clock.loadPracticePeriod(clock.periodLength);else clock.reset();remote?.reset();last=performance.now();render();log('New practice game');training.observe('ui:reset');}};
 training=new RinkTutorials({profile,getState:()=>({model:clock,remote,sound,speed:Number($('speed').value),length:Number($('length').value),setSound}),resetScenario:()=>{$('length').value='900';$('speed').value='1';clock.periodLength=900;clock.reset();remote?.reset();setSound(true);last=performance.now();},onRender:render,log});
 const hornButton=document.querySelector('[data-key="horn"]');let voice=null,hornLimit;
 function releaseHorn(){clearTimeout(hornLimit);hornAudio.release(voice);voice=null;document.body.classList.remove('honking');}
