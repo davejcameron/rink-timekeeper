@@ -23,10 +23,10 @@
     {
       "name": "Hamilton HDD 2000",
       "url": "hamilton2000.html",
-      "place": "Cambridge, Ontario (2016 guide)",
+      "place": "Canadian association-hosted manufacturer manual; Cambridge guide names Hamilton family only",
       "evidence": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
       "source": "https://erra.ncrrl.on.ca/Resources/HDD_2000series_Manual.pdf",
-      "limits": "Separate calculator-keypad workflow; not VisionTime.",
+      "limits": "Separate calculator-keypad workflow; not VisionTime. Cambridge evidence does not establish this exact model.",
       "status": "Playable"
     },
     {
@@ -48,7 +48,7 @@
       "status": "Playable"
     },
     {
-      "name": "Nevco MPC \u00b7 hockey code 871",
+      "name": "Nevco MPC · hockey code 871",
       "url": "nevco.html",
       "place": "Kemptville, Ontario; Grand Trunk, Clareview, Castle Downs and Westwood, Edmonton, Alberta",
       "evidence": "https://leagues.teamlinkt.com/kemptvillehockey/TimeClockInstructions",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "name": "Nevco MPC-4 \u00b7 K2-28",
+      "name": "Nevco MPC-4 · K2-28",
       "url": "nevco4.html",
       "place": "Kitsilano, British Columbia",
       "evidence": "https://www.acadiaminorhockey.ca/uploads/acadiamha/menu_documents/14902.pdf",
@@ -87,7 +87,7 @@
       "evidence": "https://cdn1.sportngin.com/attachments/document/0063/4612/Ray_Twinney_Hollingsworth_Clock_Instructions.pdf",
       "source": "https://www.fair-play.com/wp-content/uploads/2023/03/98-0002-29MP-50_MP-70.pdf",
       "limits": "MP-50/70 common hockey workflow; fixed 2/5/10-minute presets, five penalties per side, no 10-minute indicator spots, goal indicators enabled. The manufacturer photo shows the housing with a basketball overlay. Hockey key groups are a functional training arrangement; exact hockey overlay positions remain unverified. OTHER multi-segment penalties, program menus, timeout configuration, interval configuration, shifted penalty tracking and automatic penalty-time correction are omitted. Correcting the main clock preserves penalty times in this trainer.",
-      "status": "Playable \u00b7 layout pending"
+      "status": "Playable · layout pending"
     },
     {
       "name": "Scoretec Ultimatic U1000",
@@ -101,19 +101,19 @@
     {
       "name": "Harris Time Sportstimer",
       "url": "harris.html",
-      "place": "Cambridge, Ontario: Dickson, Duncan McIntosh, Hespeler and Preston (2016 guide)",
+      "place": "Cambridge Harris Time board-family reports (2016); exact Sportstimer / Type 1 / Type 2 mapping unresolved",
       "evidence": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
       "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
-      "limits": "Photographed Cambridge Sportstimer variant; unlocked at the start of practice. TIME and INT accept up to 20:00; periods 0\u20134; penalties up to five slots per side. Practice scoreboard displays two active slots and queues the rest. Slot labels stand in for player numbers because this panel enters a slot, not a jersey. Manual horn uses HORN 0 #; 2/3-minute horn must be configured each period. Exact Type 1 versus Type 2 mapping is unverified. HI indicator programming, passkey and physical unlock behavior are omitted.",
+      "limits": "Photographed Cambridge Sportstimer variant; unlocked at the start of practice. TIME and INT accept up to 20:00; periods 0–4; penalties up to five slots per side. Practice scoreboard displays two active slots and queues the rest. Slot labels stand in for player numbers because this panel enters a slot, not a jersey. Manual horn uses HORN 0 #; 2/3-minute horn must be configured each period. Exact Type 1 versus Type 2 mapping is unverified. HI indicator programming, passkey and physical unlock behavior are omitted.",
       "status": "Playable"
     },
     {
       "name": "Rotomatic A3004-PT",
       "url": "rotomatic.html",
-      "place": "Karl Homuth Arena, Cambridge, Ontario (2016 guide)",
+      "place": "Karl Homuth Arena: Rotomatic family in 2016 guide; exact installed model not independently verified",
       "evidence": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
       "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
-      "limits": "Legacy A3004-PT label visible in the local guide photograph. Separate tens/units score buttons and two physical penalty timers per team, without jersey entry or an automatic queue. MAIN TIME switch plus START arms the clock. AUTO HORN is the interval toggle, separate from the automatic five-second end horn. Main RESET also sounds the horn. Mechanical key auto-repeat, electromechanical latency and contact behavior are not emulated. No manufacturer manual located; operation is sourced to the local rink guide and photographed panel instructions.",
+      "limits": "A3004-PT training panel; the guide text identifies Rotomatic without a model. Exact installed-model mapping remains unresolved. Separate tens/units score buttons and two physical penalty timers per team, without jersey entry or an automatic queue. MAIN TIME switch plus START arms the clock. AUTO HORN is the interval toggle, separate from the automatic five-second end horn. Main RESET also sounds the horn. Mechanical key auto-repeat, electromechanical latency and contact behavior are not emulated. No manufacturer manual located; operation is sourced to the local rink guide and photographed panel instructions.",
       "status": "Playable"
     },
     {
@@ -199,7 +199,7 @@
       "status": "Research gap"
     },
     {
-      "name": "All American / Everbrite \u00b7 MP families",
+      "name": "All American / Everbrite · MP families",
       "url": null,
       "place": "Hockey scoreboards marketed by a Quebec arena supplier; exact installed controller model unresolved",
       "evidence": "https://sport.qc.ca/wp-content/uploads/2021/03/catalogue-arena-2020-pdf.pdf",
@@ -208,7 +208,7 @@
       "status": "Research gap"
     },
     {
-      "name": "Eversan \u00b7 hockey controls",
+      "name": "Eversan · hockey controls",
       "url": null,
       "place": "Canadian distributor carries the brand; exact rink controller installation unresolved",
       "evidence": "https://www.marchants.com/eversan/",
@@ -217,7 +217,7 @@
       "status": "Research gap"
     },
     {
-      "name": "Electro-Mech \u00b7 hockey console families",
+      "name": "Electro-Mech · hockey console families",
       "url": null,
       "place": "Hockey product documented; Canadian controller installation not yet verified",
       "evidence": "https://www.electro-mech.com/hockey/scoreboard-lx8750/",
@@ -251,18 +251,24 @@
     "limits": "Exact hardware and firmware required; optional play-timer accessories and unverified external time switches are not emulated."
   },
   "regional_scope": {
-    "Ontario": "Multiple playable profiles; mostly association guides, including historical Cambridge evidence.",
-    "British Columbia": "VisionTime at Panorama and Nevco MPC-4 evidence; Scoretec at Coquitlam.",
-    "Alberta": "Scoretec and Nevco evidence in Calgary; code-871 guide names four Edmonton arenas.",
-    "Quebec": "Ringette Laval reports Nevco at Yvon-Chartrand and OES at Place Bell. These are ringette sources; exact hardware and hockey configuration mapping remain unresolved.",
-    "Manitoba": "Timekeeper resources located; controller-specific source verification outstanding.",
-    "Saskatchewan": "No controller-specific rink match verified in this inventory yet.",
-    "New Brunswick": "No controller-specific rink match verified in this inventory yet.",
-    "Newfoundland and Labrador": "No controller-specific rink match verified in this inventory yet.",
-    "Nova Scotia": "No controller-specific rink match verified in this inventory yet.",
-    "Prince Edward Island": "No controller-specific rink match verified in this inventory yet.",
+    "Ontario": "Multiple playable profiles; mostly association guides, including historical Cambridge evidence. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades.",
+    "British Columbia": "VisionTime at Panorama and Nevco MPC-4 evidence; Scoretec at Coquitlam. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades.",
+    "Alberta": "Scoretec and Nevco evidence in Calgary; code-871 guide names four Edmonton arenas. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades.",
+    "Quebec": "Contributed board/video-system reports are listed in the arena finder. They do not establish an exact playable timekeeper controller.",
+    "Manitoba": "Board/video-system reports and Winnipeg ISC9000-X9 procurement specification only. Final selected product and installation are not confirmed.",
+    "Saskatchewan": "Contributed board/video-system reports are listed in the arena finder. They do not establish an exact playable timekeeper controller.",
+    "New Brunswick": "Contributed board/video-system reports are listed in the arena finder. They do not establish an exact playable timekeeper controller.",
+    "Newfoundland and Labrador": "Mary Brown’s Centre research remains undetermined; no maker/model source supplied.",
+    "Nova Scotia": "Contributed board/video-system reports are listed in the arena finder. They do not establish an exact playable timekeeper controller.",
+    "Prince Edward Island": "Contributed board/video-system reports are listed in the arena finder. They do not establish an exact playable timekeeper controller.",
     "Northwest Territories": "No controller-specific rink match verified in this inventory yet.",
     "Nunavut": "No controller-specific rink match verified in this inventory yet.",
     "Yukon": "No controller-specific rink match verified in this inventory yet."
+  },
+  "arena_inventory": {
+    "url": "arenas.json",
+    "reports": 64,
+    "contributed_records": 50,
+    "scope": "Dated source reports and contributed research, not a live installed-equipment inventory. Grades apply to the cited report, not present-day equipment. Review status is recorded separately."
   }
 }

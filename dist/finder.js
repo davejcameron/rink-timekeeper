@@ -7,6 +7,34 @@ for(const button of document.querySelectorAll('[data-finder]'))button.addEventLi
 const choices=document.getElementById('visual-choices');for(const group of featureGroups){const b=document.createElement('button');b.textContent=group.name;b.setAttribute('aria-pressed','false');b.onclick=()=>{for(const button of choices.children)button.setAttribute('aria-pressed',String(button===b));const matches=rinkControllers.filter(c=>group.ids.includes(c.id));document.getElementById('visual-results').replaceChildren(...matches.map(finderCard));document.getElementById('visual-status').textContent=matches.length+' reference '+(matches.length===1?'profile':'profiles')+' to compare · This identifies a panel family, not an exact model. Check the model label and hockey insert.';};choices.append(b);}
 const modelInput=document.getElementById('model-search');function filterModels(){const term=modelInput.value.trim().toLocaleLowerCase();const matches=rinkControllers.filter(c=>[c.name,c.short,c.note,c.family,c.id==='vision'?'PR04200 PR04203':c.id==='2000'?'PR95019 PR95022':''].join(' ').toLocaleLowerCase().includes(term));document.getElementById('model-results').replaceChildren(...matches.map(finderCard));document.getElementById('model-count').textContent=matches.length+' playable profiles'+(matches.length?'':' · No verified simulator match. Use Contact to suggest this model.');}modelInput.oninput=filterModels;filterModels();
 const regionSelect=document.getElementById('arena-region');for(const region of finderRegions){const option=document.createElement('option');option.value=region;option.textContent=region;regionSelect.append(option);}
-function initializeArenaFinder(data){const input=document.getElementById('arena-search'),results=document.getElementById('arena-results');function filter(){const q=input.value.trim().toLocaleLowerCase(),region=regionSelect.value,matches=data.arenas.filter(a=>(!region||a.region===region)&&[a.arena,a.city,a.region,a.controller,a.notes].join(' ').toLocaleLowerCase().includes(q));results.replaceChildren();for(const arena of matches){const card=document.createElement('article');card.className='arena-card';const regionLabel=document.createElement('small');regionLabel.textContent=arena.city+', '+arena.region;const name=document.createElement('h3');name.textContent=arena.arena;const match=document.createElement('p');match.className='match';match.textContent=arena.controller;const notes=document.createElement('p');notes.textContent=arena.notes;const date=document.createElement('small');date.textContent='Source: '+arena.date+' · Checked '+data.checked;const links=document.createElement('p'),source=document.createElement('a');source.href=arena.source;source.target='_blank';source.rel='noreferrer';source.textContent='Read arena source ↗';links.append(source);if(arena.profile){const c=rinkControllers.find(c=>c.id===arena.profile),link=document.createElement('a');link.href=c.url;link.textContent='Compare '+c.short+' →';links.append(document.createTextNode(' · '),link);}else{const help=document.createElement('a');help.href='contact.html';help.textContent='Help identify this controller';links.append(document.createTextNode(' · '),help);}card.append(regionLabel,name,match,notes,date,links);results.append(card);}document.getElementById('arena-count').textContent=matches.length+' sourced arena reports'+(matches.length?' · Verify the equipment at the rink.':' · No verified report in this selection yet. This does not mean these controllers are absent from the region.');}input.oninput=filter;regionSelect.onchange=filter;filter();}
+function arenaMatches(arena,query,region,grade){return (!region||arena.region===region)&&(!grade||arena.grade===grade)&&[arena.arena,arena.city,arena.region,arena.controller,arena.scoreboard,arena.notes,arena.grade,arena.sport].join(' ').toLocaleLowerCase().includes(query.trim().toLocaleLowerCase());}
+function initializeArenaFinder(data){
+ const input=document.getElementById('arena-search'),results=document.getElementById('arena-results'),grade=document.getElementById('arena-grade');
+ function filter(){
+  const matches=data.arenas.filter(a=>arenaMatches(a,input.value,regionSelect.value,grade.value));results.replaceChildren();
+  for(const arena of matches){
+   const card=document.createElement('article');card.className='arena-card';
+   const location=document.createElement('small');location.textContent=arena.city+', '+arena.region;
+   const name=document.createElement('h3');name.textContent=arena.arena;
+   const badge=document.createElement('span');badge.className='evidence-grade';badge.textContent=arena.grade;
+   const match=document.createElement('p');match.className='match';match.textContent=arena.controller;
+   const date=document.createElement('small');date.textContent='Source date: '+arena.date;
+   const details=document.createElement('details'),summary=document.createElement('summary');summary.textContent='Evidence, equipment & limits';
+   const board=document.createElement('p');board.textContent='Board / video system: '+arena.scoreboard;
+   const notes=document.createElement('p');notes.textContent=arena.notes;
+   const review=document.createElement('p');review.className='source-note';review.textContent=arena.source_review+' · '+(arena.sport||'Hockey');
+   const sources=document.createElement('p');
+   if(!arena.sources.length)sources.textContent='No source URL supplied';
+   arena.sources.forEach((url,index)=>{if(index)sources.append(document.createTextNode(' · '));const link=document.createElement('a');link.href=url;link.target='_blank';link.rel='noreferrer';link.textContent='Source '+(index+1)+' ↗';sources.append(link);});
+   details.append(summary,board,notes,review,sources);
+   const links=document.createElement('p'),c=arena.grade==='Controller confirmed'&&rinkControllers.find(c=>c.id===arena.profile),link=document.createElement('a');
+   link.href=c?c.url:'contact.html';link.textContent=c?'Compare '+c.short+' family →':'Help identify this controller';links.append(link);
+   card.append(location,name,badge,match,date,details,links);results.append(card);
+  }
+  document.getElementById('arena-count').textContent=matches.length+' arena reports'+(matches.length?' · Verify current equipment and review status.':' · No report in this selection. This does not mean these controllers are absent from the region.');
+ }
+ input.oninput=filter;regionSelect.onchange=filter;grade.onchange=filter;filter();
+}
+
 try{initializeArenaFinder(JSON.parse(document.getElementById('arena-data').textContent));}catch{document.getElementById('arena-count').textContent='Showing the built-in arena reports. Interactive filtering is unavailable; use the appearance or model finder.';}
 

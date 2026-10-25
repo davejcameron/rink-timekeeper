@@ -1,0 +1,929 @@
+{
+  "reported": "2026-10-25",
+  "scope": "Board compatibility and arena observations are different evidence. A controller or accessory row is not a board pairing. Unverified means unresolved, not incompatible.",
+  "records": [
+    {
+      "model": "H-2111",
+      "maker": "Daktronics",
+      "kind": "Fixed-digit board",
+      "controller": "All Sport 5000; DAK Score App for simple compatible boards only",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Horizontal wall board with HOME/GUEST, clock and PERIOD; PanaView digits (current manufacturer specification). App use is not a recommendation for video or complex/stat-panel scoring.",
+      "image_source": "https://www.daktronics.com/media/_scoreboards/modelrenderings/H-2111-PV_H.png",
+      "sources": [
+        "https://www.daktronics.com/en-us/products/sports/H-2111"
+      ],
+      "source_review": "Manufacturer product page checked 2026-10-25; controller option named",
+      "profile": "dak",
+      "image": "assets/board-h-2111.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [
+        "dak"
+      ],
+      "candidate_basis": "Documented controller pairing; verify board variant and installed console",
+      "view_id": "daktronics-h-2111"
+    },
+    {
+      "model": "H-2107",
+      "maker": "Daktronics",
+      "kind": "Fixed-digit board",
+      "controller": "All Sport 5000; DAK Score App subject to board limitations",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Four-sided centre-hung hockey board with two player/penalty lines per team.",
+      "image_source": "https://www.Daktronics.com/media/_scoreboards/modelrenderings/H-2107-PV_H.png",
+      "sources": [
+        "https://www.Daktronics.com/en-us/products/sports/H-2107"
+      ],
+      "source_review": "Manufacturer product page checked 2026-10-25; controller option named",
+      "profile": "dak",
+      "image": "assets/board-h-2107.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [
+        "dak"
+      ],
+      "candidate_basis": "Documented controller pairing; verify board variant and installed console",
+      "view_id": "daktronics-h-2107"
+    },
+    {
+      "model": "H-2101 / 2102 / 2103 / 2104 / 2106 / 2108 / 2114 / 2115",
+      "maker": "Daktronics",
+      "kind": "Fixed-digit board",
+      "controller": "All Sport 5000 system family",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Modular hockey system, about 8–22 ft wide. H-2103 is a dependent module driven through H-2102/H-2115. No image of another model is substituted.",
+      "image_source": null,
+      "sources": [
+        "https://www.daktronics.com/web-documents/hspr-documents/guides_lit/hockey solutions brochure.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "dak"
+      ],
+      "candidate_basis": "Documented controller pairing; verify board variant and installed console",
+      "view_id": "daktronics-h-2101-2102-2103-2104-2106-2108-2114-2115"
+    },
+    {
+      "model": "H-2105 / H-2109 / H-2112",
+      "maker": "Daktronics",
+      "kind": "Fixed-digit board",
+      "controller": "All Sport 5000 family manual",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Four-sided hockey boards, about 12 ft 10 in square footprint. No standalone image located.",
+      "image_source": null,
+      "sources": [
+        "https://www.Daktronics.com/Web%20Documents/Customer-Service-Manuals/ED13442.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "dak"
+      ],
+      "candidate_basis": "Documented controller pairing; verify board variant and installed console",
+      "view_id": "daktronics-h-2105-h-2109-h-2112"
+    },
+    {
+      "model": "All Sport 5500",
+      "maker": "Daktronics",
+      "kind": "Controller / accessory",
+      "controller": "No verified hockey pairing",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "Controller, not a scoreboard. ColorSmart basketball/volleyball/wrestling scope does not establish hockey compatibility.",
+      "image_source": null,
+      "sources": [
+        "https://www.daktronics.com/en-us/support/controllers/All%20Sport%205500",
+        "https://www.daktronics.com/en-us/support/kb/DD2446834"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "All Sport 1600 / 5100 / RC-100 / RC-200",
+      "maker": "Daktronics",
+      "kind": "Controller / accessory",
+      "controller": "No verified hockey board pairing",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "Family/product listings alone are not hockey support evidence. RC-100 is a handheld/base-station system.",
+      "image_source": null,
+      "sources": [
+        "https://www.daktronics.com/en-us/products/products-a-z-list",
+        "https://www.daktronics.com/en-us/support/kb/DD2308560"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Videoboard systems",
+      "maker": "Daktronics",
+      "kind": "Video / production",
+      "controller": "Show Control; All Sport Pro for scoring/video workflows",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Video control differs from fixed-digit scoreboard operation. Do not infer a particular All Sport console from a video-system brand.",
+      "image_source": null,
+      "sources": [
+        "https://www.daktronics.com/en-us/products/software-and-controllers/show-control/core-package",
+        "https://www.daktronics.com/en-us/products/software-and-controllers/all-sport-pro"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "M6018CTMV",
+      "maker": "OES",
+      "kind": "Fixed-digit board",
+      "controller": "ISC9000",
+      "pairing_grade": "Arena-observed",
+      "observed": "Thompson Arena, Western Mustangs, London, Ontario",
+      "notes": "Project reports this particular board with ISC9000. Related M6018B spec describes an 18 ft × 3 ft 10 in wall-board family; it does not prove every variant shares the same controller.",
+      "image_source": null,
+      "sources": [
+        "https://www.oes-scoreboards.com/western-mustangs-hockey/",
+        "https://www.oes-scoreboards.com/category/canada/",
+        "https://www.oes-inc.com/app/uploads/sites/2/2024/01/M6018B-Dec-1.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "isc9000"
+      ],
+      "candidate_basis": "Arena-observed pairing at Thompson Arena; does not establish every installation",
+      "view_id": "oes-m6018ctmv"
+    },
+    {
+      "model": "M6018B / M6018BICV / M6018BICE",
+      "maker": "OES",
+      "kind": "Fixed-digit board",
+      "controller": "Exact model not specified; “an OES controller” only",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "Hockey/lacrosse/ringette board family. Do not transfer the Thompson Arena pairing to every family variant.",
+      "image_source": null,
+      "sources": [
+        "https://www.oes-inc.com/app/uploads/sites/2/2024/01/M6018B-Dec-1.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "isc9000",
+        "isc85x"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "oes-m6018b-m6018bicv-m6018bice"
+    },
+    {
+      "model": "M6200 / M6009D",
+      "maker": "OES",
+      "kind": "Fixed-digit board",
+      "controller": "No model-wide controller specification located",
+      "pairing_grade": "Unverified",
+      "observed": "M6200 at 7 Chiefs Sportsplex; M6009D at Centre200",
+      "notes": "The arena research separately reports ISC9000 at 7 Chiefs; this does not establish a universal M6200 pairing or an M6009D pairing.",
+      "image_source": null,
+      "sources": [],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "isc9000",
+        "isc85x"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "oes-m6200-m6009d"
+    },
+    {
+      "model": "M1200IWV",
+      "maker": "OES",
+      "kind": "Fixed-digit board",
+      "controller": "Controller not named",
+      "pairing_grade": "Unverified",
+      "observed": "Algonquin College, Ottawa, Ontario",
+      "notes": "Listing reports green/white digits and upper ad panel; no controller model.",
+      "image_source": null,
+      "sources": [
+        "https://www.oes-scoreboards.com/category/canada/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "isc9000",
+        "isc85x"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "oes-m1200iwv"
+    },
+    {
+      "model": "M1200 locker-room clocks",
+      "maker": "OES",
+      "kind": "Fixed-digit board",
+      "controller": "Controller pairing unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "No maker specification or exact pairing found in the contributed research.",
+      "image_source": null,
+      "sources": [],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "isc9000",
+        "isc85x"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "oes-m1200-locker-room-clocks"
+    },
+    {
+      "model": "Videoboard scoring feed + production",
+      "maker": "OES",
+      "kind": "Video / production",
+      "controller": "ISC9000 scoring feed; Bolt Live and Video Control Room for production",
+      "pairing_grade": "Arena-observed",
+      "observed": "Fort Erie Race Track, Ontario (non-hockey example)",
+      "notes": "An observed video-system arrangement, not a fixed-digit hockey pairing. Bolt is not a timekeeper console.",
+      "image_source": null,
+      "sources": [
+        "https://www.oes-scoreboards.com/accessories/",
+        "https://www.oes-inc.com/app/uploads/sites/2/2025/09/Fort-Erie-Race-Track-09-25.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "ISC9000 variants / ISC Edge listing",
+      "maker": "OES",
+      "kind": "Controller / accessory",
+      "controller": "Per-board variant pairings unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "ISC9000 at Western Mustangs; ISC9000 with case at Brock Badgers M3089OWH",
+      "notes": "UL listing groups products for certification, not operational equivalence. ISC9000-MO/X9/PR/WI/ST/X2/XX/MI/PX/IP/CX options must not be assigned to boards from suffix alone. ISC Edge is a separate touchscreen interface and is not interchangeable with the ISC9000 simulator.",
+      "image_source": null,
+      "sources": [
+        "https://productiq.ulprospector.com/en/profile/960695/uytq7.e474953?term=UYTQ7&page=1"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "ISC-HHX / ISC-HHX24",
+      "maker": "OES",
+      "kind": "Controller / accessory",
+      "controller": "Wireless handheld scoreboard controller; exact board list unresolved",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Graphic LCD and numeric keypad; 900 MHz / 2.4 GHz variants. This is a controller, not a board or a simple wired remote. Prefer the official manual already indexed over a mirror.",
+      "image_source": null,
+      "sources": [
+        "https://www.oes-scoreboards.com/accessories/",
+        "https://cdn4.guidespdf.com/view/2337/2337033-ischhx.pdf",
+        "https://www.oes-inc.com/app/uploads/sites/2/2025/09/ISC-HHX-UserManual_J2.1v1.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "ISCREM-P / F / S / SR / A",
+      "maker": "OES",
+      "kind": "Controller / accessory",
+      "controller": "Wired ISC controller accessories; not standalone consoles",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "P: two push buttons; F: toggle plus two pushes; S: toggle plus push; SR: one push; A: momentary toggle. Verify exact host/port compatibility in the spec before use.",
+      "image_source": null,
+      "sources": [
+        "https://oes-inc.com/app/uploads/sites/2/2025/10/Controllers-ISC-WiredRemote.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "ISC85X / ISC850 variants",
+      "maker": "OES",
+      "kind": "Controller / accessory",
+      "controller": "62xx hockey systems in instruction sheet; exact board list unresolved",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Numeric keypad, RUN/STOP rocker and horn. UL identifies OES products; CTS-branded instructions/catalogue suggest OEM overlap. Do not infer an exclusive brand or a per-board pairing. The supplied mirror URL has an unrelated Singer title and needs source validation.",
+      "image_source": null,
+      "sources": [
+        "https://productiq.ulprospector.com/en/profile/960695/uytq7.e474953?term=UYTQ7&page=1",
+        "https://manualsdump.com/en/manuals/singer-5240model/228513/15"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "ISC Mobile",
+      "maker": "OES",
+      "kind": "Unverified lead",
+      "controller": "Existence and function not verified",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "No public product source located. Not represented as an available simulator or confirmed product.",
+      "image_source": null,
+      "sources": [],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "4507 / 4510 / 4511 / 4511-D / 4530 / 4550 / 4560 Hockey",
+      "maker": "Nevco",
+      "kind": "Fixed-digit board",
+      "controller": "MPC-4, as listed in operator instructions",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Fixed-digit hockey board family; compatibility scope is the models/configurations listed in the manual, not every Nevco board.",
+      "image_source": null,
+      "sources": [
+        "https://cdn1.sportngin.com/attachments/document/4426-3063688/Scoreboard_Operator_s_Instructions.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "nevco4"
+      ],
+      "candidate_basis": "Manufacturer manual lists base model; four-face / installation variants need verification",
+      "view_id": "nevco-4507-4510-4511-4511-d-4530-4550-4560-hockey"
+    },
+    {
+      "model": "4770 Hockey / 4770 4-Face",
+      "maker": "Nevco",
+      "kind": "Fixed-digit board",
+      "controller": "No specific controller paired in supplied product evidence",
+      "pairing_grade": "Unverified",
+      "observed": "Ted Reeve Community Arena, Ontario; Westoba Place, Manitoba; Wessman Arena, Wisconsin (US)",
+      "notes": "Two player/penalty lines per team; centre-hung 4-Face option. Do not infer MPCW-7 from current family marketing. No Canadian venue is established by the US example.",
+      "image_source": null,
+      "sources": [
+        "https://www.nevco.com/product/model-4770-4-face/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "nevco",
+        "nevco4",
+        "nevco7"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "nevco-4770-hockey-4770-4-face"
+    },
+    {
+      "model": "4725 Hockey",
+      "maker": "Nevco",
+      "kind": "Fixed-digit board",
+      "controller": "Controller not named",
+      "pairing_grade": "Unverified",
+      "observed": "Duncan McDonald Memorial Gardens, Trenton, Ontario; Highland Ice Arena, Washington (US)",
+      "notes": "Shots and two penalty timers per team. Display Director controls the associated video system, not an identified timekeeper console.",
+      "image_source": null,
+      "sources": [
+        "https://nevco.com/project/highland-ice-arena/",
+        "https://www.nevco.com/case-studies/city-quinte-west-chooses-nevco-new-video-display-scoring-equipment-upgrades/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "nevco",
+        "nevco4",
+        "nevco7"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "nevco-4725-hockey"
+    },
+    {
+      "model": "4-FACE-4511-D",
+      "maker": "Nevco",
+      "kind": "Fixed-digit board",
+      "controller": "MPC-4 manual lists 4511-D-Hockey; four-face configuration not separately established",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "Q Centre historical manual names MPC-5 instead; currency unresolved",
+      "notes": "Do not collapse a model-family manual and a particular arena’s historical controller report into one exact pairing.",
+      "image_source": null,
+      "sources": [
+        "https://cdn1.sportngin.com/attachments/document/4426-3063688/Scoreboard_Operator_s_Instructions.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "nevco4"
+      ],
+      "candidate_basis": "Manufacturer manual lists base model; four-face / installation variants need verification",
+      "view_id": "nevco-4-face-4511-d"
+    },
+    {
+      "model": "Video displays",
+      "maker": "Nevco",
+      "kind": "Video / production",
+      "controller": "Display Director / Nevco ONE Video Pro",
+      "pairing_grade": "Video only",
+      "observed": "Moncton Coliseum, New Brunswick; Trenton / Quinte West, Ontario",
+      "notes": "Video production software; these names do not establish the timekeeper console.",
+      "image_source": null,
+      "sources": [
+        "https://www.nevco.com/products/video-displays/indoor-video-displays/",
+        "https://www.nevco.com/case-studies/moncton-coliseum-adds-nevco-equipment-to-enhance-fans-experience/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "MPC-5 / MPCW-6 / MPCW-7 / MPCW / MPCX / MPCX2",
+      "maker": "Nevco",
+      "kind": "Controller / accessory",
+      "controller": "Controller family, model-specific hockey configuration required",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "NTPRD Chiller instructions (US example; not Canadian venue evidence)",
+      "notes": "MPCW-7 has hockey instructions; MPCW-6 described as operating like MPC-5. Wireless/handheld generations and overlays are not all one panel.",
+      "image_source": null,
+      "sources": [
+        "https://nevcodocs.s3.amazonaws.com/Controls/MPC-7/Hockey.PDF",
+        "https://manuals.plus/m/e602e15f69f685cd75a344c57687e80a22ac3fa99c7dd33fc5323087589910b4"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "PR95019A / PR95022A, 2000 Series",
+      "maker": "Hamilton Digital Designs",
+      "kind": "Controller / accessory",
+      "controller": "Per-board pairing unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "The contributed search did not locate these parts. The site already links the HDD 2000 manufacturer manual; preserve it. HDD and All American 2000-series are different makers and must not be merged.",
+      "image_source": null,
+      "sources": [
+        "https://erra.ncrrl.on.ca/Resources/HDD_2000series_Manual.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "SST1SB / Harris clocks / Type 1 vs Type 2",
+      "maker": "Harris Time",
+      "kind": "Unverified lead",
+      "controller": "Exact model-to-board mapping unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "Cambridge board-family reports; Quesnel proposal mentioned by contributor without a supplied arena source",
+      "notes": "Oakville manufacturer identity does not establish a particular board pairing. The site has manufacturer Type 1 and Type 2 download pages; those remain valid leads even though this search missed them.",
+      "image_source": null,
+      "sources": [
+        "https://shopoakville.com/harristime/",
+        "https://harristime.ca/download/type-1-arena-scoreboard-operating-instruction/",
+        "https://harristime.ca/download/type-2-arena-scoreboard-operating-instructions/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Timers / boards",
+      "maker": "Rotomatic",
+      "kind": "Unverified lead",
+      "controller": "Exact manufacturer pairing unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "Karl Homuth Arena, Cambridge, Ontario, historical Rotomatic family report",
+      "notes": "No manufacturer product/model pairing located. The photographed/local operating guide remains a disclosed source, not a model-wide compatibility spec.",
+      "image_source": null,
+      "sources": [],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "HK-1600-4 / HK-1780-4 / HK-1700 / HK-1800 / HK-1660 / HK-1760",
+      "maker": "Fair-Play",
+      "kind": "Fixed-digit board",
+      "controller": "MP-70 / MP-50, subject to board-type/protocol table",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "Unnamed South Rink in contributed guide; venue unresolved",
+      "notes": "Manual Boards Supported table determines scope. MP-70 protocol 69 covers a historical board range, not all generations. Goal-indicator behavior does not prove a photographed hockey overlay.",
+      "image_source": null,
+      "sources": [
+        "https://scoreboards.com/wp-content/uploads/2019/04/98-0002-29MP-50_MP-70.pdf",
+        "https://support.fair-play.com/portal/en/kb/articles/updating-the-score-on-an-mp-70-50-series-controller"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "fairplay"
+      ],
+      "candidate_basis": "Manual board-type table; simulator hockey layout remains unverified",
+      "view_id": "fair-play-hk-1600-4-hk-1780-4-hk-1700-hk-1800-hk-1660-hk-1760"
+    },
+    {
+      "model": "HK-1880A-4",
+      "maker": "Fair-Play",
+      "kind": "Fixed-digit board",
+      "controller": "Controller not named on spec sheet",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "Six-inch penalty digits and nine-inch shots; do not infer MP-70/50 solely from era or family appearance.",
+      "image_source": null,
+      "sources": [
+        "https://www.fair-play.com/wp-content/uploads/2022/10/HK-1880A-4_Spec-Sheet.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "fairplay"
+      ],
+      "candidate_basis": "Family comparison only — pairing unverified. These are panels to inspect, not a compatibility claim.",
+      "view_id": "fair-play-hk-1880a-4"
+    },
+    {
+      "model": "MP-60 / MP-80",
+      "maker": "Fair-Play",
+      "kind": "Controller / accessory",
+      "controller": "Board-type code and group configuration; exact HK model list unresolved",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Manufacturer setup procedure is documented; that is not a verified per-board compatibility list.",
+      "image_source": null,
+      "sources": [
+        "https://support.fair-play.com/portal/en/kb/articles/i-need-to-connect-my-mp-80-to-a-scoreboard"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "LX8350",
+      "maker": "Electro-Mech",
+      "kind": "Fixed-digit board",
+      "controller": "37-key hockey console; optional ScoreLink RF",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Nine × three ft basic wall board: time, period and points.",
+      "image_source": "https://assets.electro-mech.com/images/scoreboard-images/lx8350.png",
+      "sources": [
+        "https://www.electro-mech.com/hockey/"
+      ],
+      "source_review": "Manufacturer catalogue confirms model listing; exact controller pairing still requires model/version review",
+      "profile": null,
+      "image": "assets/board-lx8350.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "LX8440",
+      "maker": "Electro-Mech",
+      "kind": "Fixed-digit board",
+      "controller": "37-key hockey console; optional ScoreLink RF",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Sixteen × three ft low-height wall board.",
+      "image_source": "https://assets.electro-mech.com/images/scoreboard-images/lx8440.png",
+      "sources": [
+        "https://www.electro-mech.com/hockey/"
+      ],
+      "source_review": "Manufacturer catalogue confirms model listing; exact controller pairing still requires model/version review",
+      "profile": null,
+      "image": "assets/board-lx8440.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "LX8750",
+      "maker": "Electro-Mech",
+      "kind": "Fixed-digit board",
+      "controller": "Full-size 37-key LCD console; optional ScoreLink",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Twelve-inch main digits, nine-inch others; optional four-sided configuration and electronic team names.",
+      "image_source": "https://assets.electro-mech.com/images/scoreboard-images/lx8750.png",
+      "sources": [
+        "https://www.electro-mech.com/hockey/",
+        "https://assets.electro-mech.com/manuals/specs/hockey/LX8750 Spec Sheet.pdf"
+      ],
+      "source_review": "Manufacturer catalogue confirms model listing; exact controller pairing still requires model/version review",
+      "profile": null,
+      "image": "assets/board-lx8750.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "LX8850",
+      "maker": "Electro-Mech",
+      "kind": "Fixed-digit board",
+      "controller": "37-key hockey console; optional ScoreLink",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Shots and two displayed player/penalty lines per team. Contributed software description tracks four penalties per team; verify exact version.",
+      "image_source": "https://assets.electro-mech.com/images/scoreboard-images/lx8850.png",
+      "sources": [
+        "https://www.electro-mech.com/hockey/"
+      ],
+      "source_review": "Manufacturer catalogue confirms model listing; exact controller pairing still requires model/version review",
+      "profile": null,
+      "image": "assets/board-lx8850.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "LX7860",
+      "maker": "Electro-Mech",
+      "kind": "Fixed-digit board",
+      "controller": "37-key console family",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Compact/portable hockey board; electronic-team-name upgrade exception noted in contributed research.",
+      "image_source": "https://assets.electro-mech.com/images/scoreboard-images/lx7860.png",
+      "sources": [
+        "https://www.electro-mech.com/hockey/"
+      ],
+      "source_review": "Manufacturer catalogue confirms model listing; exact controller pairing still requires model/version review",
+      "profile": null,
+      "image": "assets/board-lx7860.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "LX7740",
+      "maker": "Electro-Mech",
+      "kind": "Fixed-digit board",
+      "controller": "37-key console family",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Sixteen × eight ft lacrosse/field-hockey board listed under hockey. Listing does not establish an ice-hockey installation.",
+      "image_source": "https://assets.electro-mech.com/images/scoreboard-images/lx7740.png",
+      "sources": [
+        "https://www.electro-mech.com/hockey/"
+      ],
+      "source_review": "Manufacturer catalogue confirms model listing; exact controller pairing still requires model/version review",
+      "profile": null,
+      "image": "assets/board-lx7740.png",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "8385 / 9785 / 9775",
+      "maker": "Eversan",
+      "kind": "Fixed-digit board",
+      "controller": "Supplied console; Synergy branding reported, separate model number unresolved",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "8385/9785 use centre and player/penalty side boards; 9775 is multisport. Cabled/wireless kit descriptions are not an exposed driving protocol.",
+      "image_source": null,
+      "sources": [
+        "https://eversan.com/wp-content/pdfs/8385Booklet.pdf",
+        "https://eversan.com/wp-content/pdfs/9785.pdf",
+        "https://eversan.com/wp-content/uploads/2016/07/9775.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Multisport 500",
+      "maker": "Spectrum",
+      "kind": "Fixed-digit board",
+      "controller": "Multisport 500 console; hockey mode 6, penalty mode 7",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Legacy manual is the reference; no product photo located. Mirror is not manufacturer hosting.",
+      "image_source": null,
+      "sources": [
+        "https://cdn2.servls.com/view/861/861973-multisport_500.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "MSX / MSX5 / Multisport 2000",
+      "maker": "Spectrum",
+      "kind": "Controller / accessory",
+      "controller": "MSX hockey instructions; MSX5-specific board list unresolved",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "MSX hockey workflow and MSX/MSX5 ASCII output are separate facts. Output configuration does not prove a board-driving spec or an MSX5 hockey board list.",
+      "image_source": null,
+      "sources": [
+        "https://cdn1.sportngin.com/attachments/document/446f-2814104/MSX_Instructions-Hockey.pdf",
+        "https://helpdesk.geniussports.com/hc/en-gb/articles/22715297115676-SPECTRUM-MSX-and-MSX5-setup-instructions"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "U1000 hockey system",
+      "maker": "ScoreTec / Kodiak Industries",
+      "kind": "Fixed-digit board",
+      "controller": "Supplied U1000 console and cable",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Kit-level system described by the manual; separate horn noted for Model 770 and later hockey boards. Winnipeg maker identity is not a named arena installation.",
+      "image_source": null,
+      "sources": [
+        "https://silo.tips/download/scoreboard-hockey-manual-for",
+        "https://nesc-timekeeping.fandom.com/wiki/Scoretec_Ultimatic_1000"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [
+        "scoretec"
+      ],
+      "candidate_basis": "Documented supplied-console system; confirm exact panel",
+      "view_id": "scoretec-kodiak-industries-u1000-hockey-system"
+    },
+    {
+      "model": "HK-1601",
+      "maker": "Colorado Time Systems",
+      "kind": "Fixed-digit board",
+      "controller": "Wireless Tabletop Controller (WTTC); wired options",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Nine × three ft wall board, thirteen-inch main digits, ten-inch player/penalty/period. Different maker/model from Fair-Play HK-1600.",
+      "image_source": "https://coloradotime.com/hubfs/Products/HK-1601_web.gif",
+      "sources": [
+        "https://coloradotime.com/products/hockey-scoreboard-hk-1601"
+      ],
+      "source_review": "Manufacturer product page checked 2026-10-25; WTTC explicitly named",
+      "profile": null,
+      "image": "assets/board-hk-1601.gif",
+      "image_status": "Manufacturer model rendering; downloaded 2026-10-25",
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Multisport controllers",
+      "maker": "Colorado Time Systems",
+      "kind": "Controller / accessory",
+      "controller": "WHC-1 handheld (F970) / WTTC-1 tabletop hockey reference (F981)",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Clock, scores, period, horn and equipped auxiliary timers. Distinct handheld and tabletop interfaces need separate simulation.",
+      "image_source": null,
+      "sources": [
+        "https://coloradotime.com/hubfs/CTS%20Website%20%20Assets/Manuals/Multisport%20Electronic%20Scoreboards/Multisport%20Controllers/WHC_All_Scoreboards_User_Guide_F970.pdf",
+        "https://spanish.coloradotime.com/manuals/WTTC_Hockey_Lacrosse_Quick_Reference_F981.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "8000-series hockey board types",
+      "maker": "All American / Everbrite",
+      "kind": "Fixed-digit board",
+      "controller": "MP8000 console; hockey sport 1 in contributed manual",
+      "pairing_grade": "Manufacturer-specified",
+      "observed": "—",
+      "notes": "Board types include 8003, 8203–8218, 8300–8549 and 8606–8614 in the cited document. Hockey-specific manual is a new lead; URL includes a nonce and may expire. Not independently retrieved in this update.",
+      "image_source": null,
+      "sources": [
+        "https://allamericanscoreboards.com//support/8000-series//Operation Manuals/Hockey_Operations.pdf?_wpnonce=4a98da91db"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "MP-7385 / MP-7457",
+      "maker": "All American / Everbrite",
+      "kind": "Unverified lead",
+      "controller": "Hockey pairing unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "—",
+      "notes": "Earlier research found non-hockey manuals for these numbers. Absence from this MP8000 hockey search does not erase those documents or prove hockey compatibility.",
+      "image_source": null,
+      "sources": [
+        "https://support.everbrite.com/products/downloads/scoreboards/3000-7000/operation/7385.pdf",
+        "https://support.everbrite.com/products/downloads/scoreboards/3000-7000/operation/7457.pdf"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Centre-hung video, Eastlink Centre",
+      "maker": "Watchfire",
+      "kind": "Video / production",
+      "controller": "Timekeeper console not named",
+      "pairing_grade": "Video only",
+      "observed": "Eastlink Centre, Charlottetown, Prince Edward Island",
+      "notes": "Four-sided 8.5 × 13.5 ft, 3.9 mm video cube, hoist-mounted. Watchfire is not Spectrum; do not substitute a fixed-digit pairing.",
+      "image_source": null,
+      "sources": [
+        "https://www.watchfire.com/our-work/eastlink-centre-charlottetown-pei"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Imposa video, Place Bell",
+      "maker": "Chainzone Imposa",
+      "kind": "Video / production",
+      "controller": "Timekeeper console not named",
+      "pairing_grade": "Video only",
+      "observed": "Place Bell, Laval, Quebec",
+      "notes": "Four-sided arena display with ring and three-sided plaza display. Solotech system description is not an exact console identification.",
+      "image_source": null,
+      "sources": [
+        "https://solotech.com/en-us/work/place-bell/",
+        "https://plsn.com/newsroom/all-news/place-bell-sports-arena-opens-with-full-ip-network-featuring-luminex-gigacore-switches/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Hybrid video + fixed digits, Owen Sound",
+      "maker": "Media Resources",
+      "kind": "Hybrid display",
+      "controller": "Timekeeper console not named",
+      "pairing_grade": "Video only",
+      "observed": "Harry Lumley Bayshore Community Centre, Owen Sound, Ontario",
+      "notes": "Four 16:9 HD video displays plus four fixed-digit scoring faces and LED ring. The supplied “Video only” pairing grade describes the evidence, not absence of fixed-digit hardware.",
+      "image_source": null,
+      "sources": [
+        "https://chl.ca/ohl-attack/attack-punch-the-ticket-for-new-scoreclock/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Video screens, Victoria",
+      "maker": "Retop",
+      "kind": "Video / production",
+      "controller": "Underlying clock and console not identified",
+      "pairing_grade": "Video only",
+      "observed": "Save-On-Foods Memorial Centre, Victoria, British Columbia",
+      "notes": "Eight screens in an octagonal halo above an existing score clock; video add-on is separate from underlying scoring hardware.",
+      "image_source": null,
+      "sources": [
+        "https://chl.ca/whl-royals/video-screens-being-installed-at-the-sofmc/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    },
+    {
+      "model": "Historical board, Kitchener",
+      "maker": "Tribar",
+      "kind": "Unverified lead",
+      "controller": "Controller pairing unresolved",
+      "pairing_grade": "Unverified",
+      "observed": "Kitchener Memorial Auditorium, Ontario; historical arena-table source retained",
+      "notes": "This pairing search did not reverify Tribar. The separate historical arena source is retained without adding a controller claim.",
+      "image_source": null,
+      "sources": [
+        "https://www.signmedia.ca/the-aud-upgrades-video-displays-in-time-for-hockey-season/",
+        "https://chl.ca/ohl-rangers/rangers-partner-with-aud-to-enhance-fan-experience/"
+      ],
+      "source_review": "Contributed research · independent pairing review pending",
+      "profile": null,
+      "candidate_profiles": [],
+      "candidate_basis": null
+    }
+  ]
+}

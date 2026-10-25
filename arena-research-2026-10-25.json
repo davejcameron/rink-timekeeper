@@ -1,0 +1,921 @@
+{
+  "scope": "Contributed arena research; evidence grades describe the cited report, not a current on-site inspection.",
+  "arenas": [
+    {
+      "arena": "Thompson Arena (Western Mustangs)",
+      "city": "London",
+      "region": "Ontario",
+      "scoreboard": "OES M6018CTMV; two wall-mounted boards, white LED digits and backlit advertising; former centre-hung board retrofitted",
+      "controller": "OES ISC9000",
+      "date": "Published 2022-12-20; updated 2025-09-16",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Source reports the installed controller; verify current hockey insert.",
+      "source": "https://www.oes-scoreboards.com/western-mustangs-hockey/",
+      "sources": [
+        "https://www.oes-scoreboards.com/western-mustangs-hockey/",
+        "https://www.oes-inc.com/app/uploads/sites/2/2025/09/Thompson-Arena-09-25.pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Progressive Auto Sales Arena",
+      "city": "Sarnia",
+      "region": "Ontario",
+      "scoreboard": "OES four-sided 14 × 10 ft, 6 mm video display, lower ring and 400 ft of 10 mm fascia; M1200 locker-room clocks, GLR-485 goal lights, HN-CTRL horn control",
+      "controller": "OES ISC9000 with remote; Bolt Content Control for video",
+      "date": "OES project updated September 2025",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Video content software is separate from the timekeeper console. Remote model is not established by this report.",
+      "source": "https://www.oes-scoreboards.com/3205/",
+      "sources": [
+        "https://www.oes-scoreboards.com/3205/",
+        "https://oes-inc.com/app/uploads/sites/2/2025/09/Sarnia-Sting-09-25.pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Brantford Civic Centre",
+      "city": "Brantford",
+      "region": "Ontario",
+      "scoreboard": "OES M6018CIVC fixed digits; 13.02 × 8.4 ft, 4 mm video display, video corners, lower scrim and three PTZ cameras; Motion Rocket video software",
+      "controller": "OES ISC9000-X9",
+      "date": "2023-10-23; project sheet September 2025",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Simulator represents the ISC9000 family; X9 options and firmware may differ.",
+      "source": "https://www.oes-scoreboards.com/brantford-civic-centre/",
+      "sources": [
+        "https://www.oes-scoreboards.com/brantford-civic-centre/",
+        "https://www.oes-inc.com/app/uploads/sites/2/2025/09/Brantford-Civic-Centre-09-02-25.pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Fort William Gardens",
+      "city": "Thunder Bay",
+      "region": "Ontario",
+      "scoreboard": "OES four-sided 9 ft 8 in × 6 ft 5 in, 4.8 mm video display, 6 mm upper ring, sponsor panels, lower scrim and control room",
+      "controller": "OES ISC9000; ISCREM-P remote, Bolt Live and goal lights",
+      "date": "2025-05-21",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "ISCREM-P is specifically named in the contributed report. Compare the installed accessory before remote practice.",
+      "source": "https://www.oes-scoreboards.com/fort-william-gardens-arena/",
+      "sources": [
+        "https://www.oes-scoreboards.com/fort-william-gardens-arena/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "CAA Arena (CIBC Place)",
+      "city": "Belleville",
+      "region": "Ontario",
+      "scoreboard": "OES four-sided 14 × 8 ft, 6 mm video display, lower video ring, Bolt Live and video control room",
+      "controller": "OES ISC 9000",
+      "date": "Project PDF 2025-09-02",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Grade applies to the centre videoboard system. A separately described south-end simple clock is not identified by this evidence. Arena naming is reported, not independently reverified.",
+      "source": "https://www.oes-scoreboards.com/3238/",
+      "sources": [
+        "https://www.oes-scoreboards.com/3238/",
+        "https://oes-inc.com/app/uploads/sites/2/2025/09/CAA-Arena-09-02-2025.pdf",
+        "https://www.stadiumjourney.com/stadiums/caa-arena-belleville-senators"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Cambridge Sports Park — South Rink",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Scoreboard not named in the guide",
+      "controller": "ISC85X Intelligent Controller",
+      "date": "Guide version 2016-01-13",
+      "grade": "Controller confirmed",
+      "profile": "isc85x",
+      "notes": "Guide names ISC85X but does not explicitly name OES in that excerpt. Historical report; current installation not verified.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Dickson Centre Arena",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Harris Time Clocks",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Guide identifies the board family; exact Sportstimer chassis and Type 1 / Type 2 mapping remain unverified.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Duncan McIntosh Arena",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Harris Time Clocks",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Guide identifies the board family; exact Sportstimer chassis and Type 1 / Type 2 mapping remain unverified.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Hespeler Memorial Arena 1 and 2",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Harris Time Clocks; guide groups both rinks together",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Both rinks share one source record. Exact Sportstimer chassis and Type 1 / Type 2 mapping remain unverified.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Preston Memorial Auditorium",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Harris Time Clocks",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Guide identifies the board family; exact Sportstimer chassis and Type 1 / Type 2 mapping remain unverified.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Cambridge Ice Centre",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Nevco system",
+      "controller": "Controller model not named; setup code 871",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "871 is a setup code, not a controller model. Historical installation only.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Karl Homuth Arena",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Rotomatic Timer; no model number",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Do not infer A3004-PT from the family name. The operating guide remains a simulator reference, not exact installed-model proof.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Galt Arena Gardens",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Hamilton Digital Designs; no model number. Visitor review describes a suspended four-sided board without naming its maker",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Hamilton family evidence does not establish VisionTime or HDD 2000 model.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+        "https://www.tripadvisor.co.za/Attraction_Review-g154985-d17529204-Reviews-Galt_Arena_Gardens-Cambridge_Region_of_Waterloo_Ontario.html"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Cambridge Sports Park — North Rink",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "scoreboard": "Hamilton Digital Designs; no model number",
+      "controller": "Controller model not named",
+      "date": "Guide version 2016-01-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Hamilton family evidence does not establish VisionTime or HDD 2000 model.",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf",
+      "sources": [
+        "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_(Ver._2016-01-13).pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Source text checked 2026-10-25",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Canada Life Place",
+      "city": "London",
+      "region": "Ontario",
+      "scoreboard": "OES centre-hung 4 mm video display, 6 mm halo ring, bowl LED screens and Ross XPression video content system",
+      "controller": "Controller not named",
+      "date": "Published 2025-05-15",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "No ISC model is named. Video content software does not establish a timekeeper controller.",
+      "source": "https://www.oes-scoreboards.com/canada-life-place/",
+      "sources": [
+        "https://www.oes-scoreboards.com/canada-life-place/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Sleeman Centre",
+      "city": "Guelph",
+      "region": "Ontario",
+      "scoreboard": "OES 700 ft × 2.36 ft, 10 mm video ring and MotionRocket LaunchPad Pro; earlier Daktronics centre-hung board; 2026–27 sponsorship document describes a planned 15 × 12 ft upgrade with corner panels, maker unnamed",
+      "controller": "Controller unknown across sources",
+      "date": "OES page 2025-05-21; Daktronics 2010–11; upgrade document 2026–27",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Multiple equipment generations. A planned summer 2026 upgrade is not an independently confirmed installation.",
+      "source": "https://www.oes-scoreboards.com/sleeman-centre/",
+      "sources": [
+        "https://www.oes-scoreboards.com/sleeman-centre/",
+        "https://chl.ca/ohl-storm/video-scoreboard-finalized-for-sleeman-centre/",
+        "https://new.express.adobe.com/webpage/tX5xiOj61GDlE"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Algonquin College",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "scoreboard": "OES M1200IWV, green/white digits, upper ad panel and two Shots14G7 displays",
+      "controller": "Controller not named",
+      "date": "OES listing 2025-05-13",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Listing only; full project page and hockey venue context require review.",
+      "source": "https://www.oes-scoreboards.com/category/canada/",
+      "sources": [
+        "https://www.oes-scoreboards.com/category/canada/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Barrie Molson Centre (Sadlon Arena)",
+      "city": "Barrie",
+      "region": "Ontario",
+      "scoreboard": "OES list entry; secondary source describes four-sided and west-end boards without naming maker/model",
+      "controller": "Controller not named",
+      "date": "OES listing 2020-08-08",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Listing alone does not establish exact board model or current equipment.",
+      "source": "https://www.oes-scoreboards.com/category/canada/",
+      "sources": [
+        "https://www.oes-scoreboards.com/category/canada/",
+        "https://icehockey.fandom.com/wiki/Sadlon_Arena"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Constantine Arena (Royal Military College)",
+      "city": "Kingston",
+      "region": "Ontario",
+      "scoreboard": "Existing Nevco 4507; tender W0046-212023/A sought an integrated Nevco Arena Video Scoreboard at 7 Navy Way",
+      "controller": "Controller not named",
+      "date": "Tender W0046-212023/A",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Tender describes existing board and requested upgrade. Dealer identity is not installation evidence; award/completion not confirmed.",
+      "source": "https://www.tendersontime.com/tenders-details/arena-video-scoreboard-w0046-212023a-2ef273f/",
+      "sources": [
+        "https://www.tendersontime.com/tenders-details/arena-video-scoreboard-w0046-212023a-2ef273f/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Harry Lumley Bayshore Community Centre — JD McArthur Arena",
+      "city": "Owen Sound",
+      "region": "Ontario",
+      "scoreboard": "Media Resources International: four 16:9 HD 6 mm video displays, four fixed-digit scoreboards, video controls and LED ring",
+      "controller": "Controller not named",
+      "date": "Announced 2013; installation reported September 4–6, 2013",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Display manufacturer is Media Resources; no separate timekeeper-console maker is established.",
+      "source": "https://chl.ca/ohl-attack/attack-punch-the-ticket-for-new-scoreclock/",
+      "sources": [
+        "https://chl.ca/ohl-attack/attack-punch-the-ticket-for-new-scoreclock/",
+        "http://www.dailydooh.com/archives/86023/print/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Kitchener Memorial Auditorium (The Aud)",
+      "city": "Kitchener",
+      "region": "Ontario",
+      "scoreboard": "Daktronics centre-hung video system, rings, corners and ribbons for September 2014 opener; earlier Canadian-made Tribar Industries system dated 2002 / upgraded about 2008",
+      "controller": "Controller not named",
+      "date": "Daktronics 2014-09-12; Tribar system operational 2009-02-06",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Separate historical generations. Daktronics displays do not establish an All Sport controller model.",
+      "source": "https://www.signmedia.ca/the-aud-upgrades-video-displays-in-time-for-hockey-season/",
+      "sources": [
+        "https://www.signmedia.ca/the-aud-upgrades-video-displays-in-time-for-hockey-season/",
+        "https://chl.ca/ohl-rangers/rangers-partner-with-aud-to-enhance-fan-experience/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "GFL Memorial Gardens",
+      "city": "Sault Ste. Marie",
+      "region": "Ontario",
+      "scoreboard": "OES four-sided curved 6 mm centre display and rings, secondary NE-corner hockey board, goal lights and video control room",
+      "controller": "Controller not named",
+      "date": "Unveiled October 2020; 2020–21 / 2021–22 seasons",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "No ISC model named; content management and instant replay are video systems.",
+      "source": "https://chl.ca/ohl/greyhounds-city-of-sault-ste-marie-unveil-gardens-improvements/",
+      "sources": [
+        "https://chl.ca/ohl/greyhounds-city-of-sault-ste-marie-unveil-gardens-improvements/",
+        "https://www.oes-scoreboards.com/category/experience/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Duncan McDonald Memorial Gardens",
+      "city": "Trenton (Quinte West)",
+      "region": "Ontario",
+      "scoreboard": "Nevco four-sided 6 mm video display, Display Director and ancillary Model 4725 hockey scoreboard",
+      "controller": "Controller not named",
+      "date": "Installed April 2017 for May 2017 Dudley Hewitt Cup",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Display Director is video software, not a controller model.",
+      "source": "https://scoreboardman.com/play-score-win/city-quinte-west-gets-new-nevco-video-display-time-dudley-hewitt-cup/",
+      "sources": [
+        "https://scoreboardman.com/play-score-win/city-quinte-west-gets-new-nevco-video-display-time-dudley-hewitt-cup/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "NorWest Arena",
+      "city": "Oliver Paipoonge",
+      "region": "Ontario",
+      "scoreboard": "Nevco 6 mm, 6.92 × 9.45 ft video display added to an existing Nevco board; 8 × 1 ft non-illuminated ADI sign",
+      "controller": "Controller not named",
+      "date": "Published 2023-01-26; updated 2026-07-09",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Existing scoreboard model and timekeeper console not named.",
+      "source": "https://www.nevco.com/project/norwest-arena/",
+      "sources": [
+        "https://www.nevco.com/project/norwest-arena/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Tribute Communities Centre (General Motors Centre)",
+      "city": "Oshawa",
+      "region": "Ontario",
+      "scoreboard": "Four-sided video scoreboard approved; procurement announcement does not name maker",
+      "controller": "Controller not named",
+      "date": "Approval announcement 2016-04-14",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "Approval and intended installation are not proof of completed equipment or manufacturer.",
+      "source": "https://www.tributecommunitiescentre.com/news/detail/oshawa-city-council-approves-new-video-scoreboard-for-the-general-motors-centre",
+      "sources": [
+        "https://www.tributecommunitiescentre.com/news/detail/oshawa-city-council-approves-new-video-scoreboard-for-the-general-motors-centre",
+        "https://chl.ca/ohl-generals/?p=5378"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Clarington Toyota Arena (Garnet B. Rickard Recreation Complex)",
+      "city": "Bowmanville / Clarington",
+      "region": "Ontario",
+      "scoreboard": "Four-face LED video board donated by Clarington Toros Zone AAA (North Shore Whitecaps); reported value over $250,000",
+      "controller": "Controller not named",
+      "date": "Donation 2024; celebration 2025-09-28",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "Maker and controller are absent from the cited announcement.",
+      "source": "https://www.clarington.net/news/posts/new-scoreboard-brings-big-league-energy-to-clarington-toyota-arena/",
+      "sources": [
+        "https://www.clarington.net/news/posts/new-scoreboard-brings-big-league-energy-to-clarington-toyota-arena/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "WFCU Centre",
+      "city": "Windsor",
+      "region": "Ontario",
+      "scoreboard": "Maker and model not located in contributed searches",
+      "controller": "Controller unknown",
+      "date": "Research report 2026-10-25",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "No source URL supplied. Not found in these searches does not mean absent.",
+      "source": null,
+      "sources": [],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "CN Centre",
+      "city": "Prince George",
+      "region": "British Columbia",
+      "scoreboard": "OES four-sided 12 × 10 ft, 6 mm display with upper lettering and lower ring; older Rock Group/OES display context",
+      "controller": "OES ISC9000 with remote; OES video control room",
+      "date": "Published 2022-05-09; updated 2025-09-16",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Remote model not established by this report. Do not treat video control room as the console.",
+      "source": "https://www.oes-scoreboards.com/cn-centre/",
+      "sources": [
+        "https://www.oes-scoreboards.com/cn-centre/",
+        "https://chl.ca/whl-cougars/cn-centre-enhances-spectators-entertainment/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Q Centre",
+      "city": "Colwood (Victoria)",
+      "region": "British Columbia",
+      "scoreboard": "Nevco 4-FACE-4511-D, as named in hosted manual",
+      "controller": "Nevco MPC-5 Control",
+      "date": "Manual marked 7-24-01; arena opened February 2004",
+      "grade": "Controller confirmed",
+      "profile": null,
+      "notes": "Association-hosted manual predates arena opening. Currency and exact installed panel need verification. MPC-5 is not silently mapped to a different MPC simulator.",
+      "source": "http://victoriagirlshockey.ca/files/q_centre_arena_score_clock_manual.pdf",
+      "sources": [
+        "http://victoriagirlshockey.ca/files/q_centre_arena_score_clock_manual.pdf",
+        "https://trek.zone/en/canada/places/834723/the-q-centre-victoria"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Prospera Place",
+      "city": "Kelowna",
+      "region": "British Columbia",
+      "scoreboard": "Daktronics 2025 three-display centre-hung, 5.9 mm, over 2,100 sq ft; continuous main display and upper/lower rings",
+      "controller": "Custom Daktronics / Show Control system; All Sport model not named",
+      "date": "Release 2025-09-23; council report 2025-03-31",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Show Control is not evidence of All Sport 5000. Council funding included multiple Memorial Cup improvements.",
+      "source": "https://www.daktronics.com/news/prospera-place-elevates-atmosphere-with-one-of-the-largest-centerhungs-in-chl-from-daktronics",
+      "sources": [
+        "https://www.daktronics.com/news/prospera-place-elevates-atmosphere-with-one-of-the-largest-centerhungs-in-chl-from-daktronics",
+        "https://kelownapublishing.escribemeetings.com/filestream.ashx?DocumentId=50996"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Pacific Coliseum",
+      "city": "Vancouver",
+      "region": "British Columbia",
+      "scoreboard": "Daktronics four-sided video scoreboard installed 2007; retired early 2023 and donated to Sunshine Coast Junior Hockey Society, Gibsons",
+      "controller": "Controller not named",
+      "date": "Historical 2007–2023",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Historical equipment only. Current fixed-digit equipment is not confirmed.",
+      "source": "https://en.wikipedia.org/wiki/Pacific_Coliseum",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pacific_Coliseum"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Save-On-Foods Memorial Centre",
+      "city": "Victoria",
+      "region": "British Columbia",
+      "scoreboard": "Retop Displays eight-screen video system: four 18 × 10 ft main displays, four corners and octagonal halo above existing clock",
+      "controller": "Controller not named",
+      "date": "Announced 2011-12-30",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Retop evidence is for video screens; underlying score clock maker is not named.",
+      "source": "https://chl.ca/whl-royals/video-screens-being-installed-at-the-sofmc/",
+      "sources": [
+        "https://chl.ca/whl-royals/video-screens-being-installed-at-the-sofmc/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Ovintiv Events Centre",
+      "city": "Dawson Creek",
+      "region": "British Columbia",
+      "scoreboard": "OES 14 × 25 ft, 6 mm video display and reported retrofit of existing fixed-digit board",
+      "controller": "Controller not named",
+      "date": "OES listing 2022-05-09",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "List snippet evidence; exact controller and board model unresolved.",
+      "source": "https://www.oes-scoreboards.com/category/experience/",
+      "sources": [
+        "https://www.oes-scoreboards.com/category/experience/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "7 Chiefs Sportsplex & Chief Jim Starlight Centre",
+      "city": "Tsuu’tina Nation",
+      "region": "Alberta",
+      "scoreboard": "OES M6200 fixed digits, 9 × 7.5 ft, white LEDs, upper ring/ad panel and goal lights; 12.5 × 9 ft 5 in centre-hung video and 14 × 25 ft video display",
+      "controller": "OES ISC9000",
+      "date": "OES project PDF September 2025",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Manufacturer project sheet cited by contributor; verify current console configuration.",
+      "source": "https://oes-inc.com/app/uploads/sites/2/2025/09/7-Chief-09-25.pdf",
+      "sources": [
+        "https://oes-inc.com/app/uploads/sites/2/2025/09/7-Chief-09-25.pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Peavey Mart Centrium",
+      "city": "Red Deer",
+      "region": "Alberta",
+      "scoreboard": "OES four-sided 17 ft 3 in × 11 ft 8 in, 6 mm display, two 10 mm fascia, M1200 clocks and HN-CTRL trumpet horn",
+      "controller": "OES ISC9000",
+      "date": "OES project PDF September 2025",
+      "grade": "Controller confirmed",
+      "profile": "isc9000",
+      "notes": "Manufacturer project sheet cited by contributor; verify current console configuration.",
+      "source": "https://oes-inc.com/app/uploads/sites/2/2025/09/Red-Deer-09-25.pdf",
+      "sources": [
+        "https://oes-inc.com/app/uploads/sites/2/2025/09/Red-Deer-09-25.pdf",
+        "https://www.oes-inc.com/app/uploads/sites/2/2025/09/Hockey-Ringette-Solutions_2025.pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Scotiabank Saddledome",
+      "city": "Calgary",
+      "region": "Alberta",
+      "scoreboard": "Daktronics 2015–16 centre-hung: fourteen video displays, top/bottom rings and 360-degree ribbon",
+      "controller": "Controller not named",
+      "date": "2015-11-20",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "No timekeeper-console model is established by the video-system report.",
+      "source": "https://www.signmedia.ca/calgary-flames-open-nhl-season-with-new-scoreboard/",
+      "sources": [
+        "https://www.signmedia.ca/calgary-flames-open-nhl-season-with-new-scoreboard/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Rogers Place",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "scoreboard": "Opening-era 46 × 46 ft, 6 mm centre-hung display, four other large displays, ribbons and control room; OEG in-house design",
+      "controller": "Controller not named",
+      "date": "Opening-era report 2016",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Manufacturer not confirmed. Do not assign Daktronics or OES from design ownership.",
+      "source": "http://alsd.com/content/rogers-place",
+      "sources": [
+        "http://alsd.com/content/rogers-place"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Merlis Belsher Place",
+      "city": "Saskatoon",
+      "region": "Saskatchewan",
+      "scoreboard": "Nevco four-sided 6 mm centre-hung video and lower ring; MotionRocket Sports Video Control System",
+      "controller": "Controller not named",
+      "date": "Opened 2018–19; release November 2018",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Video software does not identify the timekeeper console.",
+      "source": "https://www.athleticbusiness.com/industry-press-room/article/15156033/university-of-saskatchewan-equips-merlis-belsher-place-with-nevco-video-display-and-scoring-solution",
+      "sources": [
+        "https://www.athleticbusiness.com/industry-press-room/article/15156033/university-of-saskatchewan-equips-merlis-belsher-place-with-nevco-video-display-and-scoring-solution",
+        "https://www.nevco.com/case-studies/the-university-of-saskatchewan-equips-merlis-belsher-place-with-nevco-display-and-scoring-solution/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "SaskTel Centre",
+      "city": "Saskatoon",
+      "region": "Saskatchewan",
+      "scoreboard": "Video scoreboard unveiled February 2022: 6.6 million pixels, 13,800 lb, 5.5 m high; replaced 2009 board",
+      "controller": "Controller not named",
+      "date": "February 2022",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "Manufacturer is not named in the cited releases.",
+      "source": "https://www.oursportscentral.com/services/releases/saskatoon-blades-to-unveil-new-jumbotron-on-sunday/n-5794639",
+      "sources": [
+        "https://www.oursportscentral.com/services/releases/saskatoon-blades-to-unveil-new-jumbotron-on-sunday/n-5794639",
+        "https://www.oursportscentral.com/services/releases/rush-to-unveil-new-scoreboard-on-saturday/n-5794644"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Westoba Place / Westman Communications Group Place",
+      "city": "Brandon",
+      "region": "Manitoba",
+      "scoreboard": "Nevco 4770 Hockey LED with electronic team names, video display/ring, Motion Rocket software, goal lights and locker-room clocks",
+      "controller": "Controller not named",
+      "date": "Debut 2019-09-20",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "MotionRocket is video control, not the timekeeper console.",
+      "source": "https://www.nevco.com/case-studies/brandon-wheat-kings-team-up-with-nevco-to-deliver-video-display-and-scoring-solution-to-westoba-place/",
+      "sources": [
+        "https://www.nevco.com/case-studies/brandon-wheat-kings-team-up-with-nevco-to-deliver-video-display-and-scoring-solution-to-westoba-place/",
+        "https://chl.ca/whl-wheatkings/new-video-score-clock-coming-to-westoba-place/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Century Arena; Billy Mosienko Arena; Terry Sawchuk Arena",
+      "city": "Winnipeg",
+      "region": "Manitoba",
+      "scoreboard": "Tender for three control centres; scoreboard not named",
+      "controller": "OES ISC9000-X9 wireless or approved alternate, specified only",
+      "date": "City tender 380-2023, Division 11",
+      "grade": "Specified only",
+      "profile": null,
+      "notes": "Acceptable product in procurement specification. Award, installation and final selected product are not confirmed.",
+      "source": "https://legacy.winnipeg.ca/finance/findata/matmgt/documents/2023/380-2023/380-2023_NMS_Division-11.pdf",
+      "sources": [
+        "https://legacy.winnipeg.ca/finance/findata/matmgt/documents/2023/380-2023/380-2023_NMS_Division-11.pdf"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "University of Manitoba — basketball/video project",
+      "city": "Winnipeg",
+      "region": "Manitoba",
+      "scoreboard": "OES basketball/video list entry; no hockey-arena specifications",
+      "controller": "Controller not named",
+      "date": "OES listing 2020-08-04",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Context only: this is not a confirmed hockey-arena installation.",
+      "source": "https://www.oes-scoreboards.com/category/canada/",
+      "sources": [
+        "https://www.oes-scoreboards.com/category/canada/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Basketball / video context"
+    },
+    {
+      "arena": "Bell Centre",
+      "city": "Montréal",
+      "region": "Quebec",
+      "scoreboard": "Daktronics 2024–25 video board, nearly 2,900 sq ft, rounded corners and angled lower displays; replaces 2008 predecessor",
+      "controller": "Controller not named",
+      "date": "Announced 2024-09-09",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Video display maker does not establish the timekeeper console.",
+      "source": "https://www.nhl.com/canadiens/news/canadiens-to-debut-new-scoreboard-at-the-bell-centre",
+      "sources": [
+        "https://www.nhl.com/canadiens/news/canadiens-to-debut-new-scoreboard-at-the-bell-centre"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Place Bell",
+      "city": "Laval",
+      "region": "Quebec",
+      "scoreboard": "2017 Solotech AV project: Chainzone Imposa four-sided arena scoreboard, power ring and three-sided plaza display, timekeeping and video booth",
+      "controller": "Controller not named",
+      "date": "Opened 2017",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "AV vendor, display manufacturer and timekeeper console are distinct. Separate ringette-association OES guide does not resolve hockey configuration or exact controller.",
+      "source": "https://solotech.com/en-us/work/place-bell/",
+      "sources": [
+        "https://solotech.com/en-us/work/place-bell/",
+        "https://plsn.com/newsroom/all-news/place-bell-sports-arena-opens-with-full-ip-network-featuring-luminex-gigacore-switches/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Centre200",
+      "city": "Sydney (Cape Breton)",
+      "region": "Nova Scotia",
+      "scoreboard": "OES M6009D with electronic team names, four 12.6 × 7.56 ft, 4 mm centre-hung displays, corners/rings and Motion Rocket video system",
+      "controller": "Controller not named",
+      "date": "OES page 2025-05-20",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "No ISC model named. Motion Rocket is video software.",
+      "source": "https://www.oes-scoreboards.com/centre200/",
+      "sources": [
+        "https://www.oes-scoreboards.com/centre200/"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Moncton Coliseum",
+      "city": "Moncton",
+      "region": "New Brunswick",
+      "scoreboard": "Nevco six-sided centrepiece with three 6 × 9 ft, 10 mm video displays and three scoreboards; Display Director software",
+      "controller": "Controller not named",
+      "date": "Case study predates Wildcats move in 2018–19",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Historical Coliseum equipment; do not transfer this evidence to Avenir Centre.",
+      "source": "https://www.nevco.com/case-studies/moncton-coliseum-adds-nevco-equipment-to-enhance-fans-experience/",
+      "sources": [
+        "https://www.nevco.com/case-studies/moncton-coliseum-adds-nevco-equipment-to-enhance-fans-experience/",
+        "https://en.wikipedia.org/wiki/Moncton_Coliseum"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Eastlink Centre",
+      "city": "Charlottetown",
+      "region": "Prince Edward Island",
+      "scoreboard": "Watchfire four-sided centre-hung video board, installed by Gemini Group; replaced fixed-digit board",
+      "controller": "Controller not named",
+      "date": "Contributed research accessed 2026-10-25",
+      "grade": "Board only",
+      "profile": null,
+      "notes": "Watchfire is not Spectrum. No timekeeper controller is named.",
+      "source": "https://www.watchfire.com/our-work/eastlink-centre-charlottetown-pei",
+      "sources": [
+        "https://www.watchfire.com/our-work/eastlink-centre-charlottetown-pei"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Avenir Centre",
+      "city": "Moncton",
+      "region": "New Brunswick",
+      "scoreboard": "Maker and model not located in contributed searches",
+      "controller": "Controller unknown",
+      "date": "Research report 2026-10-25",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "Visitor review only; not evidence of any particular controller.",
+      "source": "https://www.stadiumjourney.com/stadiums/avenir-centre-moncton-wildcats",
+      "sources": [
+        "https://www.stadiumjourney.com/stadiums/avenir-centre-moncton-wildcats"
+      ],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Scotiabank Centre",
+      "city": "Halifax",
+      "region": "Nova Scotia",
+      "scoreboard": "Maker and model not located in contributed searches",
+      "controller": "Controller unknown",
+      "date": "Research report 2026-10-25",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "No source URL supplied. Not found in these searches does not mean absent.",
+      "source": null,
+      "sources": [],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    },
+    {
+      "arena": "Mary Brown’s Centre",
+      "city": "St. John’s",
+      "region": "Newfoundland and Labrador",
+      "scoreboard": "Maker and model not located in contributed searches",
+      "controller": "Controller unknown",
+      "date": "Research report 2026-10-25",
+      "grade": "Undetermined",
+      "profile": null,
+      "notes": "No source URL supplied. Not found in these searches does not mean absent.",
+      "source": null,
+      "sources": [],
+      "reported": "2026-10-25",
+      "source_review": "Contributed research · independent source review pending",
+      "sport": "Hockey"
+    }
+  ]
+}
