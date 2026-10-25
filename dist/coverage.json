@@ -14,11 +14,14 @@
     {
       "name": "Hamilton VisionTime",
       "url": "hamilton.html",
-      "place": "Panorama Recreation Centre, British Columbia",
+      "place": "Panorama Recreation Centre, British Columbia; Kinsmen Arena (The Aud complex), Kitchener, Ontario",
       "evidence": "https://cloud.rampinteractive.com/greatervictoriaminorballhockey/files/Information%20Documents/Clock%20Instructions/panorama_rinkB_clock_instructions_fullversion_april2018.pdf",
       "source": "https://cloud.rampinteractive.com/greatervictoriaminorballhockey/files/Information%20Documents/Clock%20Instructions/panorama_rinkB_clock_instructions_fullversion_april2018.pdf",
-      "limits": "VisionTime telephone keypad and function-key layout.",
-      "status": "Playable"
+      "limits": "VisionTime telephone keypad and function-key layout. Kinsmen official venue sheet names Vision Time but not PR04200 / PR04203 or a board model. Separate Harris Times shot-clock remote is not a VisionTime game-clock remote.",
+      "status": "Playable",
+      "additional_evidence": [
+        "https://www.theaud.ca/media/ck2jxxkv/csd_aud_kinsmen-arena_venuespecs.pdf"
+      ]
     },
     {
       "name": "Hamilton HDD 2000",
@@ -251,7 +254,7 @@
     "limits": "Exact hardware and firmware required; optional play-timer accessories and unverified external time switches are not emulated."
   },
   "regional_scope": {
-    "Ontario": "Multiple playable profiles; mostly association guides, including historical Cambridge evidence. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades.",
+    "Ontario": "Multiple playable profiles; mostly association guides, including historical Cambridge evidence. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades. Official Kinsmen Arena venue sheet confirms a Vision Time clock/controller family; separate Harris Times shot-clock remote model unresolved.",
     "British Columbia": "VisionTime at Panorama and Nevco MPC-4 evidence; Scoretec at Coquitlam. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades.",
     "Alberta": "Scoretec and Nevco evidence in Calgary; code-871 guide names four Edmonton arenas. Additional contributed arena reports include OES ISC9000 models; source review pending. See finder grades.",
     "Quebec": "Contributed board/video-system reports are listed in the arena finder. They do not establish an exact playable timekeeper controller.",
@@ -267,7 +270,7 @@
   },
   "arena_inventory": {
     "url": "arenas.json",
-    "reports": 64,
+    "reports": 65,
     "contributed_records": 50,
     "scope": "Dated source reports and contributed research, not a live installed-equipment inventory. Grades apply to the cited report, not present-day equipment. Review status is recorded separately."
   }

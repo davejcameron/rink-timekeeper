@@ -5,3 +5,7 @@
 ## Scoreboard-first flow
 
 All twelve profiles checked again at 390×844 and 1024×768 with the new live-board adapter: correct initial clocks, selector present and no horizontal page overflow. H-2111 and H-2107 model layouts checked visually. Their penalty placement and clock state were checked while switching views. Nine exact-model manufacturer renderings are local assets; controller comparisons include labelled reference thumbnails. This remains desktop browser viewport verification.
+
+## Phone period label correction
+
+390×844 browser viewport: representative Daktronics PERIOD caption centered above a 23px period number, below the clock with no overlap. Exact H-2111/H-2107 layouts retain their existing period arrangement. Official Kinsmen venue source is separately catalogued from The Aud main-bowl evidence.

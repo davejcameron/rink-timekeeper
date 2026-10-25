@@ -712,6 +712,23 @@
       "sport": "Hockey"
     },
     {
+      "arena": "Kinsmen Arena (The Aud complex)",
+      "city": "Kitchener",
+      "region": "Ontario",
+      "scoreboard": "Vision Time score clock; separate Harris Times shot clocks",
+      "controller": "Vision Time score clock and controller · exact part number not stated",
+      "profile": "vision",
+      "source": "https://www.theaud.ca/media/ck2jxxkv/csd_aud_kinsmen-arena_venuespecs.pdf",
+      "sources": [
+        "https://www.theaud.ca/media/ck2jxxkv/csd_aud_kinsmen-arena_venuespecs.pdf"
+      ],
+      "date": "Undated official venue sheet · checked 2026-10-25",
+      "grade": "Controller confirmed",
+      "notes": "Official Kinsmen Arena technical specifications, page 1, explicitly name Vision Time score clock and controller. Harris Times shot clocks have a separate remote reset controller; no remote model is named. Do not transfer this equipment report to The Aud main bowl or Kiwanis Arena. VisionTime family is confirmed; PR04200 / PR04203 suffix and installed hockey insert remain unverified.",
+      "source_review": "Official venue sheet text checked 2026-10-25 · page 1, Score Board/Shot Clocks",
+      "sport": "Hockey"
+    },
+    {
       "arena": "Kitchener Memorial Auditorium (The Aud)",
       "city": "Kitchener",
       "region": "Ontario",

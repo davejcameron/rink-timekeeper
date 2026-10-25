@@ -924,6 +924,26 @@
       "profile": null,
       "candidate_profiles": [],
       "candidate_basis": null
+    },
+    {
+      "model": "Vision Time score clock · Kinsmen Arena; board model not stated",
+      "maker": "Hamilton / VisionTime",
+      "kind": "Score clock system",
+      "controller": "Vision Time controller; part number not stated",
+      "pairing_grade": "Arena-observed",
+      "observed": "Kinsmen Arena, The Aud complex, Kitchener, Ontario",
+      "notes": "Official venue sheet page 1 names Vision Time score clock and controller. It separately lists Harris Times shot clocks with a remote reset controller. This is Kinsmen Arena, not The Aud main bowl. Board rendering, controller suffix and shot-clock remote model are not supplied. Existing Hamilton VisionTime profile is a family comparison; check the actual insert.",
+      "image_source": null,
+      "sources": [
+        "https://www.theaud.ca/media/ck2jxxkv/csd_aud_kinsmen-arena_venuespecs.pdf"
+      ],
+      "source_review": "Official venue sheet text checked 2026-10-25 · publication date not stated",
+      "profile": "vision",
+      "candidate_profiles": [
+        "vision"
+      ],
+      "candidate_basis": "Official arena-observed VisionTime family pairing; exact model and insert require comparison",
+      "view_id": "hamilton-visiontime-kinsmen"
     }
   ]
 }

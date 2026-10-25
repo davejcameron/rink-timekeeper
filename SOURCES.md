@@ -126,3 +126,7 @@ Fifty contributed rows are preserved in arena-research-2026-10-25.json and merge
 ## Scoreboard-first identification
 
 49 contributed compatibility/reference rows are preserved in dist/scoreboards.json. Nine exact-model manufacturer images were downloaded from the supplied URLs: Daktronics H-2111/H-2107, Electro-Mech LX8350/LX8440/LX8750/LX8850/LX7860/LX7740 and CTS HK-1601. image_source records provenance; these are model renderings, not arena photos. Daktronics product specifications explicitly name All Sport 5000; current digit specification says PanaView, correcting the contributed ColorSmart description. CTS HK-1601 explicitly names WTTC. Catalogue presence and certification listings are not model-wide compatibility evidence. ISC Edge remains a distinct interface; the new All American hockey PDF is a pending lead, not yet a verified manual or playable profile. Prior Hamilton and Harris sources are retained where this contribution reported not found.
+
+## Official Kinsmen Arena venue sheet
+
+https://www.theaud.ca/media/ck2jxxkv/csd_aud_kinsmen-arena_venuespecs.pdf — official venue host; undated, checked 2026-10-25. Page 1 Score Board/Shot Clocks explicitly identifies Vision Time score clock/controller and separate Harris Times shot clocks with remote reset control. No controller part number, board model or remote model is stated. Applies to Kinsmen Arena, not the main Aud bowl or Kiwanis. This adds one official arena report (65 total) and one arena-observed board/controller reference (50 total), without adding an unsupported remote simulator.
