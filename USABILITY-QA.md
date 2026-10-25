@@ -9,3 +9,7 @@ All twelve profiles checked again at 390×844 and 1024×768 with the new live-bo
 ## Phone period label correction
 
 390×844 browser viewport: representative Daktronics PERIOD caption centered above a 23px period number, below the clock with no overlap. Exact H-2111/H-2107 layouts retain their existing period arrangement. Official Kinsmen venue source is separately catalogued from The Aud main-bowl evidence.
+
+## Shared period layout correction
+
+Replaced the Daktronics-only phone rule with a shared period component across all simulator boards. Browser geometry checks passed for all 12 representative views at 390×844, 1024×768 and 1440×900 (36 cases), plus H-2111, H-2107 and OES M6018CTMV at those same sizes (9 cases). In all 45 cases, PERIOD is above its number, both centers differ by at most 1px, the caption is below the clock, and the page has no horizontal overflow. ISC9000 phone view also visually inspected. Automated suite: 644 tests pass.

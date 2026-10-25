@@ -5,4 +5,8 @@
 
 body.honking .scoreboard[data-board-family]{box-shadow:0 0 28px #f5b942,inset 0 0 0 2px #ffffff50}
 
-@media(max-width:899px){.workspace .arena-stage .scoreboard[data-board-family="dak"][data-board-layout="standard"] .clock-wrap>small{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin-top:7px;line-height:1.2;color:#fff}.workspace .arena-stage .scoreboard[data-board-family="dak"][data-board-layout="standard"] .board-period-label{font-size:9px;font-weight:700;letter-spacing:1px}.workspace .arena-stage .scoreboard[data-board-family="dak"][data-board-layout="standard"] #period{font-size:23px;line-height:1;margin:0;padding:3px 10px;min-width:32px;text-align:center}}
+/* Shared period field: one caption above one centered number on every board. */
+.workspace .arena-stage .scoreboard[data-board-family] .clock-wrap>.board-period{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin-top:7px;line-height:1.2;color:#fff;letter-spacing:1px}
+.workspace .arena-stage .scoreboard[data-board-family] .board-period>.board-period-label{display:block;font-size:9px;font-weight:700;line-height:1.2;letter-spacing:1px;white-space:nowrap}
+.workspace .arena-stage .scoreboard[data-board-family] .board-period>#period{display:block;font-size:24px;line-height:1;margin:0;padding:3px 10px;min-width:32px;text-align:center;letter-spacing:0}
+@media(max-width:899px){.workspace .arena-stage .scoreboard[data-board-family] .clock-wrap>.board-period{gap:4px;margin-top:6px}.workspace .arena-stage .scoreboard[data-board-family] .board-period>#period{font-size:23px}}
