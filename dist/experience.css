@@ -17,3 +17,19 @@
 @media(min-width:1101px){.workspace>aside{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;scrollbar-width:thin;padding-bottom:3px}}
 /* Keep shot counts visible when practising auxiliary SOG controls. */
 .workspace .arena-stage .shots-display{display:block;grid-column:1/-1;font-size:8px;line-height:1.3;padding:3px 0 0;margin:0;text-align:center;order:3}.workspace .arena-stage .scores{order:1}.workspace .arena-stage .penalty-board{order:2}.remote-reference-note{font-size:11px;color:#6e6e73;margin-top:16px}
+
+/* A3004-PT photographed panel: round pushbuttons and four lever switches. */
+.newworkspace .canadian-device.rotomatic{background:linear-gradient(110deg,#d0d0c9,#b9bab5 50%,#d5d4cc);border:6px solid #343936;border-radius:7px;box-shadow:inset 0 0 0 2px #e3e2d8,0 8px 20px #0002}
+.newworkspace .rotomatic .roto-top{gap:0;grid-template-columns:1fr .82fr 1fr;border:2px solid #454a45}
+.newworkspace .rotomatic .roto-team{border:0;padding:8px 10px}.newworkspace .rotomatic .roto-team:first-child{border-right:2px solid #454a45}.newworkspace .rotomatic .roto-team:last-child{border-left:2px solid #454a45}
+.newworkspace .rotomatic .roto-instructions{border:3px solid #a5312f;margin:5px;background:#c9cac1;color:#333b34}
+.newworkspace .rotomatic .knobs button{position:relative;isolation:isolate;display:flex;align-items:flex-end;justify-content:center;min-height:77px;padding:57px 1px 3px;background:none;border:0;border-radius:4px;color:#252d27;font:600 8px/1.15 Arial,sans-serif;letter-spacing:.3px;text-align:center;box-shadow:none;touch-action:manipulation}
+.newworkspace .rotomatic .knobs button::before{content:'';position:absolute;top:6px;left:50%;width:39px;height:39px;transform:translateX(-50%);border-radius:50%;border:3px solid #67634e;background:radial-gradient(ellipse at 35% 26%,#59615a 0,#171d18 20%,#070c08 53%,#242b23 57%,#070b08 70%);box-shadow:0 3px 0 #373a2d,3px 5px 5px #0007,inset 0 0 0 2px #242d24}
+.newworkspace .rotomatic .knobs button:active::before{top:8px;box-shadow:0 1px 0 #373a2d,1px 2px 3px #0007,inset 0 0 0 2px #242d24}
+.newworkspace .rotomatic .knobs button:focus-visible{outline:2px solid #0066cc;outline-offset:2px}
+.newworkspace .rotomatic .roto-bottom{gap:5px;border-top:2px solid #454a45;margin-top:0;padding-top:4px}
+.newworkspace .rotomatic .knobs .roto-switch{padding-top:57px;overflow:visible}
+.newworkspace .rotomatic .knobs .roto-switch::before{width:29px;height:29px;top:15px;border:3px solid #8b8264;background:radial-gradient(circle,#222b22 25%,#757b69 31%,#1e261e 40%,#757561 53%,#343b2d 60%);box-shadow:1px 3px 4px #0007}
+.newworkspace .rotomatic .knobs .roto-switch::after{content:'';position:absolute;left:calc(50% - 4px);top:30px;width:8px;height:23px;border-radius:5px;background:linear-gradient(90deg,#585e50,#e0e0c8 40%,#898c75 70%,#3a4438);border:1px solid #555d49;transform:rotate(26deg);transform-origin:50% 2px;box-shadow:2px 2px 2px #0006;transition:transform .12s,top .12s}
+.newworkspace .rotomatic .knobs .roto-switch[aria-pressed=true]::after{top:9px;transform-origin:50% 22px;transform:rotate(-26deg)}
+.newworkspace .rotomatic .roto-team h3{font:bold 12px Arial,sans-serif;margin:10px 0 2px}.newworkspace .rotomatic .roto-team>b{font:bold 12px Arial,sans-serif;letter-spacing:1px}
