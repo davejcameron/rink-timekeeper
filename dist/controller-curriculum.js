@@ -87,6 +87,7 @@ function buildControllerCurriculum(profile){
  add('Sound & practice','speed','Use accelerated practice','Open Practice setup and select 5×. All simulated timers accelerate together.','Practice setup → Simulation speed → 5×',['ui:speed:5'],(m,e,a,s)=>e==='ui:speed'&&s.speed===5);
  add('Sound & practice','reset','Reset a practice game','Reset clears the prepared scores and penalties. The hardware power sequence is separate.','Practice setup → Reset game → confirm',['ui:reset'],(m,e)=>e==='ui:reset'&&m.home===0&&m.pen.home.length===0,s=>{s.model.home=3;seeded(s.model);});
  add('Sound & practice','reference','Compare with the real controller','Open the photo and source notes. Check the panel layout and read the listed configuration limits.','Expand Controller photo & manual',['ui:reference'],(m,e)=>e==='ui:reference');
+ if(profile==='isc9000')for(const side of ['home','guest'])add('Goal lights','held-light-'+side,'Hold and release the '+side+' goal light','The configured light stays on only while its physical button is held. Score stays unchanged.','Hold GOAL LIGHT '+(side==='home'?'←':'→')+' then release',['goalDown:'+side,'goalUp:'+side],(m,e,h)=>e==='key:goalUp:'+side&&h.includes('key:goalDown:'+side)&&!m.goal[side]&&m[side]===0);
  return lessons;
 }
 if(typeof module!=='undefined')module.exports=buildControllerCurriculum;

@@ -1,45 +1,48 @@
-# Rinkside
+# Rinkside Clock
 
-A browser and phone hockey timekeeper training simulator with six controller profiles. No build or dependencies are required.
+Free browser and phone hockey timekeeper practice. **12 playable profiles, 523 guided lessons**, dynamic eight-task assessments, and documented remote accessories on seven profiles. No build step or application dependencies.
 
-- Live site: https://rink-timekeeper.tinyaphid17.chatgpt.site
-- Visual controller library: `dist/controllers.html`
-- Serve locally: `python3 -m http.server 8080 --directory dist`
-- Verify behavior: `node --test tests/*.test.js`
+- Live: https://rinksideclock.com
+- First shift: https://rinksideclock.com/start-here.html
+- Arena / appearance / model finder: https://rinksideclock.com/controllers.html
+- Manuals: https://rinksideclock.com/manuals.html
+- Coverage and research gaps: https://rinksideclock.com/coverage.html
+- Reports: https://rinksideclock.com/contact.html (prepares a public GitHub issue)
 
-| Profile | Page | Guided lessons |
+| Profile | Simulator | Guided lessons |
 | --- | --- | ---: |
-| Daktronics All Sport 5000 inspired | `dist/index.html` | 43 |
-| Hamilton VisionTime | `dist/hamilton.html` | 56 |
-| Hamilton HDD 2000 PR95019A/PR95022A | `dist/hamilton2000.html` | 69 |
-| OES ISC9000, J12 hockey overlay | `dist/isc9000.html` | 42 |
-| Nevco MPC, hockey configuration code 871 | `dist/nevco.html` | 42 |
-| OES ISC85X hockey overlay | `dist/isc85x.html` | 41 |
+| Daktronics All Sport 5000 | [Open](https://rinksideclock.com/daktronics.html) | 52 |
+| Hamilton VisionTime | [Open](https://rinksideclock.com/hamilton.html) | 62 |
+| Hamilton HDD 2000 | [Open](https://rinksideclock.com/hamilton2000.html) | 69 |
+| OES ISC9000 | [Open](https://rinksideclock.com/isc9000.html) | 52 |
+| OES ISC85X | [Open](https://rinksideclock.com/isc85x.html) | 41 |
+| Nevco MPC · hockey code 871 | [Open](https://rinksideclock.com/nevco.html) | 49 |
+| Nevco MPC-4 · K2-28 | [Open](https://rinksideclock.com/nevco4.html) | 36 |
+| Nevco MPCW-7 | [Open](https://rinksideclock.com/nevco7.html) | 41 |
+| Fair-Play MP-50 / MP-70 | [Open](https://rinksideclock.com/fairplay.html) | 42 |
+| Scoretec Ultimatic U1000 | [Open](https://rinksideclock.com/scoretec.html) | 32 |
+| Harris Time Sportstimer | [Open](https://rinksideclock.com/harris.html) | 22 |
+| Rotomatic A3004-PT | [Open](https://rinksideclock.com/rotomatic.html) | 25 |
 
-Each lesson loads a prepared scenario, checks actual controller state, and supports independent selection, restart and session progress. Topics filter the lesson list. Larger screens show the scoreboard beside the physical console; narrow screens scroll the console horizontally so the button positions stay recognizable. Sound starts on, with held horns and keyboard operation.
+## Training and fidelity
 
-## Controller fidelity
+Guided lessons load independent scenarios and validate actual controller state. Test yourself hides the solution, shuffles tasks and varies game-time targets, scores and penalty player numbers. Results distinguish independent, assisted and skipped tasks. Progress stays in the current page session.
 
-The three additional panels use real controller photographs and manufacturer-authored operating instructions. Their displays, key groups, numeric order, switches, and color coding are recreated in HTML/CSS. The library includes verified reference photographs for all six controllers. Photo/source comparison is available inside each new simulator. See [SOURCES.md](SOURCES.md) for provenance and configuration decisions.
+The site is a training aid, not a firmware emulator or a Canadian arena census. Each profile exposes its configuration and omitted controls. Fair-Play uses a labelled functional hockey layout; exact hockey insert positions remain unverified. Rotomatic uses the photographed local Cambridge guide; no manufacturer manual has been located. Quebec brand reports are listed without assigning an unverified model. The evidence is strongest in Ontario, British Columbia and Alberta.
 
-The OES profiles support four penalty rows per team, two active rows, queue release, corrections, shots, intermission and repeating shift timers. The ISC9000 additionally supports queue hold, penalty stop/run, saved stoppage times and basic team name entry. ISC85X presets add minutes; its shared +1 and right-side rocker preserve the documented workflow.
+Seven profiles provide thirteen documented remote accessory / mode choices and 46 remote lessons. Exact hardware, firmware and port assumptions are in [REMOTES.md](REMOTES.md). Unsupported handsets are not invented. Primary documents and image provenance are in [SOURCES.md](SOURCES.md), [coverage.json](dist/coverage.json), and [arenas.json](dist/arenas.json).
 
-Nevco uses SET/YES/NO entry, MMSS plus tenths for main time, duration-before-jersey penalty entry, review/edit/insert/clear, goal indicators, shots, timeout timer 0, chronometer display and a simulated handheld switch. Code 871 identifies the hockey configuration; it does not identify an exact MPC chassis generation.
+The root is the simulator library. `/controllers.html` is a distinct arena / visual / model finder. All pages share help navigation and a consistent footer. Canonical and social metadata use rinksideclock.com; a dedicated 1200 × 600 PNG supplies Open Graph and X large-image previews.
 
-Hamilton 2000 includes 15-entry penalty memories, delayed penalties, misconducts, recall editing, timeouts, warm-up and repeating horn. VisionTime alternate penalties are held previews; queue activation is outside that profile. Daktronics supports the enabled hockey overlay controls, two penalty slots, shots/saves log counters and a simplified timeout.
+## Run and verify
 
-Independent training aid, with fixed configurations rather than a complete firmware emulator. Inactive keys retain their physical positions, and each profile lists omitted hardware/setup functions. Goals do not automatically cancel penalties. Check the installed overlay, configuration, rink procedures and league rules before operating a real game clock.
+```sh
+python3 -m http.server 8080 --directory dist
+node --test tests/*.test.js
+```
 
-## Canadian controller expansion
+Static reference pages are generated by `python3 scripts/build-reference-pages.py`. Simulator source is in `dist/`; tests cover timing, entry validation, penalties, audio, remotes, lessons and assessment scoring. Source and issue templates are public. No application accounts, advertising analytics or backend score storage are used; hosting and security services process normal web requests as described on the Privacy page.
 
-Twelve playable profiles: the original six plus Nevco MPC-4/K2-28, Nevco MPCW-7, Fair-Play MP-50/70, Scoretec U1000, Harris Time Sportstimer (Cambridge variant), and legacy Rotomatic A3004-PT. Open `/coverage.html` for source evidence and unimplemented/unverified variants. Fair-Play hockey key positions are explicitly a functional layout pending an exact insert photo. No universal Canadian coverage claim. Tests: `node --test tests/*.test.js`.
+## Current hardware research work
 
-The root now opens the controller library. Daktronics practice has a dedicated `/daktronics.html` URL. All profile links, metadata and sitemap entries were migrated; `/controllers.html` remains an alternate library URL with the root canonical. The shared interface uses system typography, quiet surfaces and a compact lesson rail; physical console styling stays controller-specific.
-
-## Optional remotes
-
-Open Remote controls beside the console photo link. Seven controller profiles support verified remote configurations, with thirteen accessory/mode choices and 46 additional lessons (516 lessons total). Nevco TCS5/TCS7 console lock and unplug/restart recovery are simulated; Fair-Play distinguishes wired time switches from exclusive MiClock mode. OES and VisionTime shots accessories are included. See REMOTES.md for model/firmware assumptions and explicitly unimplemented optional play-timer accessories.
-
-## Test yourself
-
-Each controller has an eight-task assessment with shuffled scenarios and variable game-time targets, scores and penalty player numbers. Tasks show outcomes rather than button sequences. Check answer validates the current state; revealing a solution or restarting marks that task assisted. Skipped tasks and review sequences appear in the session-only results. Guided tutorials remain available separately.
+Separate simulators are still needed for the unplayable families in the coverage directory, including All Sport 2000/2600 and 3000, OES Edge / HHX, newer Fair-Play, and Electro-Mech CX. Manuals alone do not verify Canadian rink deployment or exact key positions. Contributions should supply a model label, hockey insert photograph, public manual and dated arena evidence. See the controller evidence issue template.

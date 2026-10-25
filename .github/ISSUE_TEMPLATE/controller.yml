@@ -1,0 +1,21 @@
+name: Controller or arena evidence
+description: Suggest a controller, hockey insert, remote, or arena correction
+title: "Controller evidence: "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Manufacturer, model label and hockey insert
+    validations:
+      required: true
+  - type: input
+    id: arena
+    attributes:
+      label: Arena, rink number, city and province or territory
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public manual, photograph and source date
+      description: Include exact model evidence. A scoreboard brand alone does not identify its controller. Do not include player photos or private information.
+    validations:
+      required: true

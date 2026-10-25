@@ -15,6 +15,7 @@ class OESClock {
   if(k==='clear'){const e=this.edit;if(!e)return;if(e.type==='name'){e.chars=e.chars.slice(0,-1);e.lastKey=null;return;}if(['player','penMinutes','penSeconds'].includes(e.type)){if(!legacy){this.pen[e.side].splice(e.slot,1);this.compact();this.done('PENALTY CLEARED');}else if(!e.clearOnce){e.clearOnce=true;e.digits='0';e.player=0;e.working=0;this.message='CLEAR AGAIN TO REMOVE PENALTY';}else{this.pen[e.side].splice(e.slot,1);this.done('PENALTY CLEARED · QUEUE ADVANCES ON RUN');}return;}e.digits='0';e.replaceOnDigit=true;return;}
   if(k==='increment'){const e=this.edit;if(e&&['score','shots','period'].includes(e.type)){const n=Math.min(e.max,(e.digits===''?e.value:Number(e.digits))+1);this.writeTotal(e,n);this.done();}return;}
   if(k.startsWith('preset:')){const e=this.edit;if(e&&['minutes','breakMinutes'].includes(e.type)){e.digits=String(Math.min(99,(e.digits===''?e.value:Number(e.digits))+Number(k.split(':')[1])));}return;}
+  if(k.startsWith('goalDown:')||k.startsWith('goalUp:')){const [action,side]=k.split(':');this.goal[side]=action==='goalDown';return;}
   if(k.startsWith('goal:')){const side=k.split(':')[1];this.goal[side]=!this.goal[side];return;}
   if(k==='penrun'){this.penRunning=!this.penRunning;this.message=this.penRunning?'PENALTIES RUN':'PENALTIES STOP';return;}
   if(k==='penhold'){this.holdQueue=!this.holdQueue;this.message=this.holdQueue?'QUEUED PENALTIES HELD':'QUEUED PENALTIES RELEASED';if(!this.holdQueue)this.compact();return;}

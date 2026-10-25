@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-24",
+  "checked": "2026-10-25",
   "scope": "Canadian rink hockey score-clock controller families and known variants; evidence inventory, not a national installed-equipment census",
   "controllers": [
     {
@@ -8,7 +8,7 @@
       "place": "Mitchell, Ontario; Carleton University, Ottawa",
       "evidence": "https://www.mitchellmarlins.com/page/show/6723639-volunteer-training-and-info",
       "source": "https://www.daktronics.com/web-documents/customer-service-manuals/ed11976.pdf",
-      "limits": "Hockey overlay LL-2436; installed firmware can differ.",
+      "limits": "Hockey overlay LL-2436; installed firmware can differ. Minor/major additive penalty presets and penalty indicators are modelled. Team timeout counts, player-penalty recall editing, setup menus and auxiliary shot timers remain omitted.",
       "status": "Playable"
     },
     {
@@ -35,7 +35,7 @@
       "place": "Port Elgin, Ontario",
       "evidence": "https://ssmha.com/Pages/10492/How_to_Run_the_Clocks/",
       "source": "https://cloud.rampinteractive.com/burlingtonringette/files/Arena_instructions/ISC9000-UserManual_J12_1.3.pdf",
-      "limits": "Four penalty rows; two active; training configuration documented.",
+      "limits": "Four penalty rows; two active; training configuration documented. Goal-light buttons are momentary holds (manual p27). PRO TOL/SAVES and hardware setup remain outside this fixed training configuration.",
       "status": "Playable"
     },
     {
@@ -50,11 +50,14 @@
     {
       "name": "Nevco MPC \u00b7 hockey code 871",
       "url": "nevco.html",
-      "place": "Kemptville, Ontario",
+      "place": "Kemptville, Ontario; Grand Trunk, Clareview, Castle Downs and Westwood, Edmonton, Alberta",
       "evidence": "https://leagues.teamlinkt.com/kemptvillehockey/TimeClockInstructions",
       "source": "https://erra.ncrrl.on.ca/Resources/Nevco_871_Full.pdf",
       "limits": "871 is a configuration, not a hardware generation. Check the physical overlay before selecting.",
-      "status": "Playable"
+      "status": "Playable",
+      "additional_evidence": [
+        "https://hawksathleticclub.teamsnapsites.com/wp-content/uploads/sites/914/2025/02/Nevco-871-Cheat-Sheet-Hockey.pdf"
+      ]
     },
     {
       "name": "Nevco MPC-4 \u00b7 K2-28",
@@ -68,17 +71,20 @@
     {
       "name": "Nevco MPCW-7",
       "url": "nevco7.html",
-      "place": "Russell, Ontario",
+      "place": "Russell, Ontario; Don Hartman North East Sportsplex, Calgary, Alberta",
       "evidence": "https://www.russellwarriors.ca/the-bench/the-clock/",
       "source": "https://nevcodocs.s3.amazonaws.com/Controls/MPC-7/Hockey.PDF",
       "limits": "2016 hockey overlay, wired panel time control with no handheld attached. Default minor 2:00, major 5:00; penalty on/off enabled. Main MMSSs commits after five digits; period is separate. Timeout timer 1 is fixed to 30 seconds, displayed on the practice scoreboard; warning options and other timeout timers are omitted. Radio pairing, profiles, installation options, team-name programming and shot clocks are outside this profile. Goal light duration is a practice default.",
-      "status": "Playable"
+      "status": "Playable",
+      "additional_evidence": [
+        "https://www.nesportsplex.com/score-clock"
+      ]
     },
     {
       "name": "Fair-Play MP-50 / MP-70",
       "url": "fairplay.html",
-      "place": "Ray Friel, Ottawa, Ontario (family identified; model suffix unverified)",
-      "evidence": "https://www.nmhop.ca/_files/ugd/7141f6_117605a6be6445839cff86f0c1a812fa.pdf",
+      "place": "Ray Twinney / Hollingsworth, Newmarket (MP-70 named in undated guide); Ray Friel, Ottawa (family only)",
+      "evidence": "https://cdn1.sportngin.com/attachments/document/0063/4612/Ray_Twinney_Hollingsworth_Clock_Instructions.pdf",
       "source": "https://www.fair-play.com/wp-content/uploads/2023/03/98-0002-29MP-50_MP-70.pdf",
       "limits": "MP-50/70 common hockey workflow; fixed 2/5/10-minute presets, five penalties per side, no 10-minute indicator spots, goal indicators enabled. The manufacturer photo shows the housing with a basketball overlay. Hockey key groups are a functional training arrangement; exact hockey overlay positions remain unverified. OTHER multi-segment penalties, program menus, timeout configuration, interval configuration, shifted penalty tracking and automatic penalty-time correction are omitted. Correcting the main clock preserves penalty times in this trainer.",
       "status": "Playable \u00b7 layout pending"
@@ -187,8 +193,8 @@
       "url": null,
       "place": "Hockey product documented; Canadian controller installation not yet verified",
       "evidence": "https://www.electro-mech.com/hockey/scoreboard-lx8750/",
-      "source": "https://www.electro-mech.com/hockey/scoreboard-lx8750/",
-      "limits": "Product evidence only. Need exact legacy/CX console model, Canadian rink evidence and manual.",
+      "source": "https://www.electro-mech.com/Manuals/CXConsoleMPHockeyLacrosse401A.pdf",
+      "limits": "Manufacturer CX-series MP Hockey/Lacrosse v4.0.1 manual and handheld instructions located. Canadian installation and exact photographed hockey panel still unverified; no simulator yet.",
       "status": "Research gap"
     },
     {
@@ -215,5 +221,20 @@
     "new_lessons": 46,
     "source": "https://github.com/davejcameron/rink-timekeeper/blob/main/REMOTES.md",
     "limits": "Exact hardware and firmware required; optional play-timer accessories and unverified external time switches are not emulated."
+  },
+  "regional_scope": {
+    "Ontario": "Multiple playable profiles; mostly association guides, including historical Cambridge evidence.",
+    "British Columbia": "VisionTime at Panorama and Nevco MPC-4 evidence; Scoretec at Coquitlam.",
+    "Alberta": "Scoretec and Nevco evidence in Calgary; code-871 guide names four Edmonton arenas.",
+    "Quebec": "Nevco at Yvon-Chartrand and OES at Place Bell documented by Ringuette Laval; exact hardware mapping unresolved.",
+    "Manitoba": "Timekeeper resources located; controller-specific source verification outstanding.",
+    "Saskatchewan": "No controller-specific rink match verified in this inventory yet.",
+    "New Brunswick": "No controller-specific rink match verified in this inventory yet.",
+    "Newfoundland and Labrador": "No controller-specific rink match verified in this inventory yet.",
+    "Nova Scotia": "No controller-specific rink match verified in this inventory yet.",
+    "Prince Edward Island": "No controller-specific rink match verified in this inventory yet.",
+    "Northwest Territories": "No controller-specific rink match verified in this inventory yet.",
+    "Nunavut": "No controller-specific rink match verified in this inventory yet.",
+    "Yukon": "No controller-specific rink match verified in this inventory yet."
   }
 }

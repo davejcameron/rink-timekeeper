@@ -1,0 +1,25 @@
+name: Simulator bug
+description: Report an incorrect control, scenario or display
+title: "Bug: "
+body:
+  - type: input
+    id: model
+    attributes:
+      label: Controller model and page
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected behavior, and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+  - type: textarea
+    id: source
+    attributes:
+      label: Public manual or reference
+      description: Do not post personal information or photos of players.

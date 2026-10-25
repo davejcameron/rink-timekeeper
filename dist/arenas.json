@@ -1,0 +1,206 @@
+{
+  "checked": "2026-10-25",
+  "scope": "Dated public reports, not a live installed-equipment inventory.",
+  "arenas": [
+    {
+      "arena": "Panorama Recreation Centre \u00b7 Rink B",
+      "city": "North Saanich",
+      "region": "British Columbia",
+      "controller": "Hamilton VisionTime PR04200 / PR04203",
+      "profile": "vision",
+      "source": "https://cloud.rampinteractive.com/greatervictoriaminorballhockey/files/Information%20Documents/Clock%20Instructions/panorama_rinkB_clock_instructions_fullversion_april2018.pdf",
+      "date": "April 2018 guide",
+      "notes": "Manufacturer manual hosted by the local association. Check the telephone keypad and model label."
+    },
+    {
+      "arena": "Dickson Centre",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "controller": "Harris Time Sportstimer \u00b7 photographed variant",
+      "profile": "harris",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "date": "January 2016 guide",
+      "notes": "Historical rink guide. Current equipment and exact Type 1 / Type 2 mapping are not verified."
+    },
+    {
+      "arena": "Duncan McIntosh Arena",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "controller": "Harris Time Sportstimer \u00b7 photographed variant",
+      "profile": "harris",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "date": "January 2016 guide",
+      "notes": "Historical rink guide. Current equipment and exact Type 1 / Type 2 mapping are not verified."
+    },
+    {
+      "arena": "Hespeler Arena",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "controller": "Harris Time Sportstimer \u00b7 photographed variant",
+      "profile": "harris",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "date": "January 2016 guide",
+      "notes": "Historical rink guide. Current equipment and exact Type 1 / Type 2 mapping are not verified."
+    },
+    {
+      "arena": "Preston Memorial Auditorium",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "controller": "Harris Time Sportstimer \u00b7 photographed variant",
+      "profile": "harris",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "date": "January 2016 guide",
+      "notes": "Historical rink guide. Current equipment and exact Type 1 / Type 2 mapping are not verified."
+    },
+    {
+      "arena": "Karl Homuth Arena",
+      "city": "Cambridge",
+      "region": "Ontario",
+      "controller": "Rotomatic A3004-PT",
+      "profile": "rotomatic",
+      "source": "https://cambridgeroadrunners.com/Public/Documents/2016-17_CrGHA_Scoreboard_Timekeeper_Instructions_%28Ver._2016-01-13%29.pdf",
+      "date": "January 2016 guide",
+      "notes": "Historical local photograph and operating guide; manufacturer manual not located. Verify the current equipment."
+    },
+    {
+      "arena": "Bell Sensplex",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "controller": "OES ISC85X",
+      "profile": "isc85x",
+      "source": "https://www.nmhop.ca/arena-clocks",
+      "date": "undated association page",
+      "notes": "Association identifies the controller family; compare the hockey insert and rocker switch."
+    },
+    {
+      "arena": "Richcraft Sensplex",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "controller": "OES ISC85X",
+      "profile": "isc85x",
+      "source": "https://www.nmhop.ca/arena-clocks",
+      "date": "undated association page",
+      "notes": "Association identifies the controller family; compare the hockey insert and rocker switch."
+    },
+    {
+      "arena": "Carleton University Ice House",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "controller": "Daktronics All Sport 5000",
+      "profile": "dak",
+      "source": "https://www.nmhop.ca/arena-clocks",
+      "date": "undated association page",
+      "notes": "Model-specific instructions linked by the association. Firmware and configured options can differ."
+    },
+    {
+      "arena": "Ray Friel Recreation Complex",
+      "city": "Ottawa",
+      "region": "Ontario",
+      "controller": "Fair-Play family \u00b7 exact suffix unverified",
+      "profile": "fairplay",
+      "source": "https://www.nmhop.ca/_files/ugd/7141f6_117605a6be6445839cff86f0c1a812fa.pdf",
+      "date": "undated local guide",
+      "notes": "Family identification only. The simulator\u2019s hockey key positions are still unverified."
+    },
+    {
+      "arena": "Ray Twinney Recreation Complex",
+      "city": "Newmarket",
+      "region": "Ontario",
+      "controller": "Fair-Play MP-70 \u00b7 named in guide",
+      "profile": "fairplay",
+      "source": "https://cdn1.sportngin.com/attachments/document/0063/4612/Ray_Twinney_Hollingsworth_Clock_Instructions.pdf",
+      "date": "undated guide",
+      "notes": "Source filename names these arenas and the document identifies MP-70. This is not a current equipment inspection or a verified hockey overlay photograph."
+    },
+    {
+      "arena": "Hollingsworth Arena",
+      "city": "Newmarket",
+      "region": "Ontario",
+      "controller": "Fair-Play MP-70 \u00b7 named in guide",
+      "profile": "fairplay",
+      "source": "https://cdn1.sportngin.com/attachments/document/0063/4612/Ray_Twinney_Hollingsworth_Clock_Instructions.pdf",
+      "date": "undated guide",
+      "notes": "Source filename names these arenas and the document identifies MP-70. This is not a current equipment inspection or a verified hockey overlay photograph."
+    },
+    {
+      "arena": "Russell Arena",
+      "city": "Russell",
+      "region": "Ontario",
+      "controller": "Nevco MPCW-7 hockey workflow",
+      "profile": "nevco7",
+      "source": "https://www.russellwarriors.ca/the-bench/the-clock/",
+      "date": "October 2017 local instructions",
+      "notes": "Dedicated NEW MINOR / NEW MAJOR keys are described; compare the installed panel."
+    },
+    {
+      "arena": "Don Hartman North East Sportsplex",
+      "city": "Calgary",
+      "region": "Alberta",
+      "controller": "Nevco MPCW-7",
+      "profile": "nevco7",
+      "source": "https://www.nesportsplex.com/score-clock",
+      "date": "undated facility page",
+      "notes": "Facility explicitly names its MPCW-7 and provides a demonstration."
+    },
+    {
+      "arena": "Grand Trunk Arena",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "controller": "Nevco hockey configuration 871",
+      "profile": "nevco",
+      "source": "https://hawksathleticclub.teamsnapsites.com/wp-content/uploads/sites/914/2025/02/Nevco-871-Cheat-Sheet-Hockey.pdf",
+      "date": "February 2025 hosted guide",
+      "notes": "Local guide names these arenas and code 871. Code is not an exact chassis model; compare the keypad."
+    },
+    {
+      "arena": "Clareview Arena",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "controller": "Nevco hockey configuration 871",
+      "profile": "nevco",
+      "source": "https://hawksathleticclub.teamsnapsites.com/wp-content/uploads/sites/914/2025/02/Nevco-871-Cheat-Sheet-Hockey.pdf",
+      "date": "February 2025 hosted guide",
+      "notes": "Local guide names these arenas and code 871. Code is not an exact chassis model; compare the keypad."
+    },
+    {
+      "arena": "Castle Downs Arena",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "controller": "Nevco hockey configuration 871",
+      "profile": "nevco",
+      "source": "https://hawksathleticclub.teamsnapsites.com/wp-content/uploads/sites/914/2025/02/Nevco-871-Cheat-Sheet-Hockey.pdf",
+      "date": "February 2025 hosted guide",
+      "notes": "Local guide names these arenas and code 871. Code is not an exact chassis model; compare the keypad."
+    },
+    {
+      "arena": "Westwood Arena",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "controller": "Nevco hockey configuration 871",
+      "profile": "nevco",
+      "source": "https://hawksathleticclub.teamsnapsites.com/wp-content/uploads/sites/914/2025/02/Nevco-871-Cheat-Sheet-Hockey.pdf",
+      "date": "February 2025 hosted guide",
+      "notes": "Local guide names these arenas and code 871. Code is not an exact chassis model; compare the keypad."
+    },
+    {
+      "arena": "Yvon-Chartrand Arena",
+      "city": "Laval",
+      "region": "Quebec",
+      "controller": "Nevco with NEW MINOR / MAJOR \u00b7 exact chassis unresolved",
+      "profile": null,
+      "source": "https://ringuettelaval.com/wp-content/uploads/sites/563/2023/06/Panneau_Nevco.pdf",
+      "date": "June 2023 hosted instructions",
+      "notes": "Association guide documents a five-digit time entry and dedicated penalty keys. Model label and exact hockey overlay are still needed before assigning a simulator."
+    },
+    {
+      "arena": "Place Bell",
+      "city": "Laval",
+      "region": "Quebec",
+      "controller": "OES family \u00b7 exact controller unresolved",
+      "profile": null,
+      "source": "https://ringuettelaval.com/candidature/marqueur-marqueuse/",
+      "date": "association page checked October 2026",
+      "notes": "The association links an OES panel guide for Place Bell. A brand reference alone does not establish ISC9000 or ISC85X."
+    }
+  ]
+}

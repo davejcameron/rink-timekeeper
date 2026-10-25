@@ -1,0 +1,19 @@
+{
+  "profiles": 12,
+  "lessons": 523,
+  "lesson_counts": {
+    "dak": 52,
+    "vision": 62,
+    "2000": 69,
+    "isc9000": 52,
+    "isc85x": 41,
+    "nevco": 49,
+    "nevco4": 36,
+    "nevco7": 41,
+    "fairplay": 42,
+    "scoretec": 32,
+    "harris": 22,
+    "rotomatic": 25
+  },
+  "checked": "2026-10-25"
+}

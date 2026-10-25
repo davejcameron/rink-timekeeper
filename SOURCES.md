@@ -99,3 +99,16 @@ Image provenance: Nevco diagrams rendered unmodified from manufacturer manual co
 ## Remote accessories
 
 See REMOTES.md for the seven compatible console profiles, thirteen training accessory/mode configurations, primary manuals and compatibility limits. The remote-control illustrations are schematic. OES ISC-HH modes use functional layouts. Manufacturer photos of OES ISCREM-S and Fair-Play HH-70/HC-70 are linked in the accessory reference. No main-clock remote is inferred for ISC85X, Scoretec, Harris or Rotomatic. Forty-six remote lessons extend the profile curricula.
+
+## Audit additions — 2026-10-25
+
+- Hockey Canada 2026–2028 playing rules: https://cdn.hockeycanada.ca/hockey-canada/Hockey-Programs/Officiating/Downloads/2026-28-hc-rulebook-e.pdf — sections 4 and 5 for the introductory guide.
+- Fair-Play MP-70 Canadian guide: https://cdn1.sportngin.com/attachments/document/0063/4612/Ray_Twinney_Hollingsworth_Clock_Instructions.pdf — model is named; hockey insert photograph remains unresolved.
+- Edmonton code-871 arenas: https://hawksathleticclub.teamsnapsites.com/wp-content/uploads/sites/914/2025/02/Nevco-871-Cheat-Sheet-Hockey.pdf
+- Calgary MPCW-7: https://www.nesportsplex.com/score-clock
+- Quebec: https://ringuettelaval.com/candidature/marqueur-marqueuse/ and https://ringuettelaval.com/wp-content/uploads/sites/563/2023/06/Panneau_Nevco.pdf — no exact chassis assigned.
+- Electro-Mech CX MP Hockey/Lacrosse v4.0.1: https://www.electro-mech.com/Manuals/CXConsoleMPHockeyLacrosse401A.pdf — reference only, not an implemented profile or verified Canadian installation.
+- Daktronics ED11976 printed pp75–76: minor/major presets add their configured duration; penalty keys toggle indicators. Training presets fixed to two and five minutes.
+- OES ISC9000 J12 v1.3 printed p27: goal light is held. Home/guest assignments in the trainer are fixed, while physical arrows refer to rink direction.
+
+The Fair-Play library diagram is original SVG labelled as functional, with unverified insert positions. The actual manufacturer housing photo remains inside the profile and is explicitly labelled as a basketball insert.

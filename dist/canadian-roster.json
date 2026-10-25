@@ -23,7 +23,7 @@
     "kind": "Manufacturer hockey overlay diagram",
     "source": "https://nevcodocs.s3.amazonaws.com/Controls/MPC-7/Hockey.PDF",
     "evidence": "https://www.russellwarriors.ca/the-bench/the-clock/",
-    "place": "Russell, Ontario",
+    "place": "Russell, Ontario; Don Hartman North East Sportsplex, Calgary, Alberta",
     "limits": "2016 hockey overlay, wired panel time control with no handheld attached. Default minor 2:00, major 5:00; penalty on/off enabled. Main MMSSs commits after five digits; period is separate. Timeout timer 1 is fixed to 30 seconds, displayed on the practice scoreboard; warning options and other timeout timers are omitted. Radio pairing, profiles, installation options, team-name programming and shot clocks are outside this profile. Goal light duration is a practice default.",
     "url": "nevco7.html"
   },
@@ -36,8 +36,8 @@
     "photo": "assets/fairplay-housing.png",
     "kind": "Official MP-70 housing photo \u00b7 basketball overlay pictured",
     "source": "https://www.fair-play.com/wp-content/uploads/2023/03/98-0002-29MP-50_MP-70.pdf",
-    "evidence": "https://www.nmhop.ca/_files/ugd/7141f6_117605a6be6445839cff86f0c1a812fa.pdf",
-    "place": "Ray Friel, Ottawa, Ontario (family identified; model suffix unverified)",
+    "evidence": "https://cdn1.sportngin.com/attachments/document/0063/4612/Ray_Twinney_Hollingsworth_Clock_Instructions.pdf",
+    "place": "Ray Twinney / Hollingsworth, Newmarket (MP-70 named in undated guide); Ray Friel, Ottawa (family only)",
     "limits": "MP-50/70 common hockey workflow; fixed 2/5/10-minute presets, five penalties per side, no 10-minute indicator spots, goal indicators enabled. The manufacturer photo shows the housing with a basketball overlay. Hockey key groups are a functional training arrangement; exact hockey overlay positions remain unverified. OTHER multi-segment penalties, program menus, timeout configuration, interval configuration, shifted penalty tracking and automatic penalty-time correction are omitted. Correcting the main clock preserves penalty times in this trainer.",
     "url": "fairplay.html"
   },
